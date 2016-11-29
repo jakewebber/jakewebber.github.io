@@ -81,6 +81,7 @@ p {
 }
 /* Headers */
 
+
 .header {
     text-align: center;
     background: url(../img/atlanta.png);
@@ -92,14 +93,30 @@ p {
     -moz-transition: all 2s ease-in-out 2s;
     -webkit-transition: all 2s ease-in-out 2s;
 }
+@media screen and (max-width: 480px){
+	.header {
+		height: 400px !important;
+	}
+}
+
 .header hr {
     width: 30%;
 }
-.header-info {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+@media screen and (min-width: 480px){
+	.header-info {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
+
+@media screen and (max-width: 480px){
+	.header-info {
+		position: relative !important;
+		height: 300px !important;
+	}
+}
+
 .header-bg {
     background: black;
 }
@@ -357,7 +374,7 @@ h1 {
 
 .about {
     padding: 50px 20px;
-	padding-left: 15%;
+	
     height: 100%;
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 	
 }
@@ -365,12 +382,18 @@ h1 {
     color: white;
 }
 .about p {
-	text-indent: 50px;
     color: #ddd;
-    text-align: left;
+    text-align: center;
     font-size: 17px;
     line-height: 200%;
 }
+@media screen and (min-width: 480px){
+	.about p{
+			text-indent: 50px;
+			padding-left: 20%;
+	}
+}
+
 .about a {
     color: #f9c2c2;
     text-align: center;
@@ -606,6 +629,8 @@ h1 {
     background: #0a1526;
     padding: 50px 20px;
 }
+
+
 .main-section.portfolio hr {
     width: 80%;
 }
@@ -809,7 +834,7 @@ h1 {
 .res-nav_click:hover,
 .res-nav_click:active,
 .res-nav_click:focus {
-    color: #7cc576 !important;
+    color: #d14540 !important;
 }
 /* Animation Timers */
 
