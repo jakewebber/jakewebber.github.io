@@ -531,7 +531,7 @@ h1 {
 }
 
 .Portfolio-nav {
-    display: flex;
+    display: block;
     padding: 0px;
     text-align: center;
     margin: 0 auto;
@@ -542,23 +542,27 @@ h1 {
 .Portfolio-nav ul{
 	padding: 0 0;
 	width: 100%;
+	display: block;
+	
 }
 .Portfolio-nav li {
 	border-top: 1px solid #777;
-    display: inline;
+    display: inline-block;
 	background: #222;
 }
+
 .Portfolio-nav li a {
-    display: inline-block;
+    display: flex;
     padding: 5px 22px;
     font-size: 12px;
 	height: 100%;
     line-height: 20px;
     color: white;
     margin: 0 auto;
-    display: inline-block;
 	text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	text-align: center;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -569,6 +573,12 @@ h1 {
 .border-right{
 	border-right: 1px solid #777;	
 }
+@media (max-width: 765px) {
+    .border-right{
+		border: 1px solid #777;
+	}
+}
+
 .Portfolio-nav li a:hover {
     background: #777;
     color: #fff;
@@ -579,10 +589,11 @@ h1 {
     color: #fff;
     text-decoration: none;
 }
-.portfolioContainer {
+.portfolio-container {
 	width: 100%;
-	  padding:0;
-	  margin: 0;
+	  padding:0px;
+	  margin: 0px;
+
 	  border-top: 1px solid #777;
 }
 .Portfolio-box {

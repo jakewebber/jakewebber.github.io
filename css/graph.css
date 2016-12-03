@@ -1,6 +1,6 @@
 /* Skills Graph Styling */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 865px) {
     .wrapper {
         width: 100%;        
         white-space: nowrap;
