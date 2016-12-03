@@ -11,10 +11,17 @@ Last updated: November 2016
 	<title>Jacob Webber | Developer</title>
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+	
+	<!-- Import Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type='text/css'>
-
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<!-- Import CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
@@ -33,7 +40,6 @@ Last updated: November 2016
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
-
 </head>
 
 <body>
@@ -68,9 +74,8 @@ Last updated: November 2016
 					<li>Developer located in Atlanta, Georgia.</li>
 				</ul>
 			</div>
-
 		</header>
-		<!--header end-->
+		<!--Header end-->
 	</div>
 	<!--Navigation start-->
 	<nav class="main-nav-outer scroll-to-fixed-fixed " id="test">
@@ -158,6 +163,197 @@ Last updated: November 2016
 	</section>
 	<!--about end-->
 
+		<!--portfolio section-->
+	<section class="main-section charcoal portfolio " id="portfolio">
+		<div class="portfolio-nav-outer wow fadeIn delay-04s">
+			<div class="portfolio-filter">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="border-left border-right current">All</a></li>
+					<span>|</span>
+					<li><a href="#" data-filter=".app" class="border-left border-right">Applications</a></li>			
+					<li><a href="#" data-filter=".web" class="border-right">Web Development</a></li>
+					<span>|</span>		
+					<li><a href="#" data-filter=".java" class="border-right border-left">Java</a></li>
+					<li><a href="#" data-filter=".php" class="border-right">PHP</a></li>
+					<li><a href="#" data-filter=".csharp" class="border-right">C#</a></li>
+					<li><a href="#" data-filter=".vba" class="border-right">VBA</a></li>						
+				</ul>
+			</div>
+		</div>
+			
+		<ul class="portfolioContainer" id="rig">
+    <li class="java app web">
+        <a class="rig-cell" href="https://jakewebber.github.io/LoLQuickStats/" target="blank_">
+				<h2 class="proj-title" id="lol">LoL Quick Stats</h2>
+				<img class="rig-img" src="img/lolquickstats-tile.jpg">
+				<span class="rig-overlay"></span>
+				<span class="rig-text"><h2>LoLQuickStats</h2>
+					<h6>The fastest stats for a League of Legends team lobby before loading in.<br> Uses optical character recognition and image comparison algorithms to quickly obtain information on your team's players from a screenshot.</h6>				<div class="skills">
+					<span class="skill language">Java</span>
+					<span class="skill language">CSS</span>
+					<span class="skill language">JSON</span>
+					<span> | </span>
+					<span class="skill">OCR</span>
+				</div></span>
+        </a>
+    </li>
+    <li class="java app">
+        <a class="rig-cell" href="https://github.com/jakewebber/HighWire3D#readme" target="blank_">
+			<h2 class="proj-title" id="hw3d">HighWire <br>3D</h2>       
+			<img class="rig-img" src="img/highwire-tile.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"><h2>HighWire 3D</h2>
+				<h6>Model 3D wireframe scenes with different projections, edit objects with dynamic controls and custom matrix transformations, and import / export as a simple CSV.</h6>
+				<div class="skills">
+				<span class="skill language">Java</span>
+				<span> | </span>
+				<span class="skill">Pixel Manipulation</span>
+				<span class="skill">3D Graphics</span>
+				</div>
+			</span>
+        </a>
+    </li>
+    <li class="php web">
+        <a class="rig-cell" href="https://github.com/jakewebber/HubSpotContactUpdate#readme" target="blank_">
+            <img class="rig-img" src="img/hubspotcontact-tile.jpg">
+			<h2 class="proj-title" id="hs">Contact Update</h2>       
+            <span class="rig-overlay"></span>
+            <span class="rig-text"><h2>HubSpot Contact Update</h2>
+				<h6>Script for cleaning and updating HubSpot contacts using their RESTful API. Outputs an HTMl page table of the contact updates. Includes robust response error code handling. Set up as a CHRON job for regular updating</h6>
+				<div class="skills">
+				<span class="skill language">PHP</span>
+				<span class="skill language">HTML</span>
+				<span> | </span>
+				<span class="skill">HubSpot</span>
+				<span class="skill">REST API</span>
+				</div>
+			</span>
+        </a>
+    </li>
+    <li class="php web">
+        <a class="rig-cell" href="https://github.com/jakewebber/WPCategoryImport" target="blank_">
+            <img class="rig-img" src="img/wpcategory-tile.png">
+			<h2 class="proj-title" id="wp">Taxonomy<br>Import</h2>       
+            <span class="rig-overlay"></span>
+            <span class="rig-text"><h2>WordPress Taxonomy Import</h2>
+				<h6>Simple WordPress plugin for importing a CSV file as a taxonomy / nested categories into WordPress.</h6>
+				<div class="skills">
+				<span class="skill language">PHP</span>
+				<span> | </span>
+				<span class="skill">WordPress</span>
+				<span class="skill">Linux Systems</span>
+				</div>
+			</span>
+        </a>
+    </li>
+    <li class="vba">
+        <a class="rig-cell" href="https://github.com/jakewebber/VBADocSplitter#readme" target="blank_">
+            <img class="rig-img" src="img/docsplitter-tile.png">
+			<h2 class="proj-title" id="doc">Doc Splitter</h2>       
+            <span class="rig-overlay"></span>
+            <span class="rig-text"><h2>Word Doc Splitter Macro</h2>
+				<h6>Word macro for batch-splitting hundreds of Word Doc into HTML files by delimiters. Auto-formats for a specific report template and performs robust format-error catching to ensure a complete split. </h6>
+				<div class="skills">
+					<span class="skill language">VBA</span>
+					<span> | </span>
+					<span class="skill">Visual Studio</span>
+				</div>
+			</span>
+        </a>
+    </li>
+    <li class="csharp app">
+        <a class="rig-cell" href="https://github.com/jakewebber/Memory-Pool#readme" target="blank_">
+            <img class="rig-img" src="img/memorypool-tile.png">
+			<h2 class="proj-title" id="mempool">Memory Pool</h2>       
+            <span class="rig-overlay"></span>
+            <span class="rig-text"><h2>Memory Pool</h2>
+					<h6>3D memory-based game matching pool balls. Blls mimic pool table physics and collisions when clicked. Only two balls are visible at a time after displaying all for a brief second at the start.</h6>
+					<div class="skills">
+					<span class="skill language">C#</span>
+					<span class="skill language">ASP</span>
+					<span> | </span>
+					<span class="skill">Unity</span>
+				</div></span>
+        </a>
+    </li>	
+    <li class="csharp app">
+        <a class="rig-cell" href="https://github.com/jakewebber/Top-Wallpaper-VR" target="blank_">
+			<h2 class="proj-title" id="vr">Wallpaper <br><br> Virtual Reality</h2>
+            <img class="rig-img" src="img/vrwallpaper.png">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">
+				<h2>Reddit Wallpaper Virtual Reality</h2>
+				<h6>Pulls the top most recent posts from the wallpapers subreddit and displays them in a virtual reality gallery.</h6>
+				<div class="skills">
+					<span class="skill language">C#</span>
+					<span class="skill language">ASP</span>
+					<span class="skill language">JSON</span>
+					<span> | </span>
+					<span class="skill">Unity</span>
+				</div>
+			</span>
+        </a>
+    </li>
+    <li class="java app">
+        <a class="rig-cell" href="https://github.com/jakewebber/Word-Solver" target="blank_">
+			<h2 class="proj-title" id="ws">Word Solver</h2>
+            <img class="rig-img" src="img/wordsolver-tile.png">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">
+				<h2>Word Solver</h2>
+				<h6>Solve for words of a specified length using dictionary algorithms based on letter frequencies. Optimized for solving word-based games, or simply searching words.</h6>
+				<div class="skills">
+					<span class="skill language">Java</span>
+					<span> | </span>
+					<span class="skill">Data Visualization</span>
+				</div>			
+			</span>
+        </a>
+    </li>	
+    <li class="java app">
+        <a class="rig-cell" href="https://github.com/jakewebber/GameArcade" target="blank_">
+            <img class="rig-img" src="img/arcade-tile.png">
+			<h2 class="proj-title" id="arcade">Arcade</h2>       
+            <span class="rig-overlay"></span>
+            <span class="rig-text">
+				<h2>Game Arcade</h2>
+				<h6>Renditions of classic arcade games like tetris with added features. More points are earned for higher difficulty.</h6>	
+				<div class="skills">
+					<span class="skill language">Java</span>
+					<span> | </span>
+					<span class="skill">Data Structures</span>
+				</div>				
+			</span>
+        </a>
+    </li>
+    <li class="web">
+        <a class="rig-cell" href="https://github.com/jakewebber/jakewebber.github.io" target="blank_">
+            <img class="rig-img" src="img/personal-tile.png">
+			<h2 class="proj-title" id="personal">Personal <br> Website</h2>       
+            <span class="rig-overlay"></span>
+            <span class="rig-text">
+				<h2>Personal Website</h2>
+				<h6>A responsive and mobile-friendly personal site with a lot of custom CSS on top of some popular libraries. Built with Bootstrap, hosted with GitHub Pages. Source code found here.
+				</h6>	
+				<div class="skills">
+					<span class="skill language">HTML</span>
+					<span class="skill language">CSS</span>
+					<span class="skill language">Javascript</span>	
+					<span> | </span>
+					<span class="skill">Bootstrap</span>
+				</div>				
+			</span>
+        </a>
+    </li>	
+</ul>
+</section>
+<!--Portfolio End-->
+
+<section class="github-section charcoal">
+	<a class="current" href="https://github.com/jakewebber" target="_blank"><img class="github-logo img-responsive" src="img/github.png">
+	</a>
+</section>
+	
 	<!--- Experience Section -->
 	<section class="main-section experience">
 		<div class="container  graph" id="experience">
@@ -269,7 +465,6 @@ Last updated: November 2016
 						<br> September 2015</p>
 					<a href="https://msft3c.com/">More Information</a>
 				</div>
-
 			</div>
 
 			<h2 align="center">Skills</h2>
@@ -396,169 +591,6 @@ Last updated: November 2016
 		</div>
 	</section>
 	<!--experience section-end-->
-
-	<!--portfolio section-->
-	<section class="main-section portfolio" id="portfolio">
-		<div class="container">
-			<h1>Projects</h1>
-			<div class="portfolioFilter">
-				<ul class="Portfolio-nav wow fadeIn delay-02s">
-					<li><a href="#" data-filter="*" class="current">All</a>
-					</li>
-					<li><a href="#" data-filter=".java">Java</a>
-					</li>
-					<li><a href="#" data-filter=".php">PHP</a>
-					</li>
-					<li><a href="#" data-filter=".csharp">C#</a>
-					</li>
-					<li><a href="#" data-filter=".vba">VBA</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="portfolioContainer wow fadeInUp delay-04s">
-			<figure class="Portfolio-box java hovereffect">
-				<img class="img-responsive" src="img/lolquickstats-tile.jpg">
-				<div class="overlay lolquickstats">
-					<h2>LoLQuickStats</h2>
-					<h6>The fastest stats for a League of Legends team lobby before loading in.<br> Uses optical character recognition and image comparison algorithms to quickly obtain information on your team's players from a screenshot.</h6>
-					<a class="info" href="https://jakewebber.github.io/LoLQuickStats/">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">Java</span>
-					<span class="skill language">CSS</span>
-					<span class="skill language">JSON</span>
-					<span> | </span>
-					<span class="skill">OCR</span>
-				</div>
-			</figure>
-			<figure class="Portfolio-box java hovereffect">
-				<img class="img-responsive" src="img/highwire-tile.jpg">
-				<div class="overlay highwire">
-					<h2>HighWire 3D</h2>
-					<h6>Model 3D wireframe scenes with different projections, edit objects with dynamic controls and custom matrix transformations, and import / export as a simple CSV.</h6>
-					<a class="info" href="https://github.com/jakewebber/HighWire3D#readme">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">Java</span>
-					<span> | </span>
-					<span class="skill">Pixel Manipulation</span>
-					<span class="skill">3D Graphics</span>
-				</div>
-			</figure>
-
-			<figure class="Portfolio-box php hovereffect">
-				<img class="img-responsive" src="img/hubspotcontact-tile.jpg">
-				<div class="overlay hubspot-contact">
-					<h2>HubSpot Contact Update</h2>
-					<h6>Script for cleaning and updating HubSpot contacts using their RESTful API. Outputs an HTMl page table of the contact updates. Includes robust response error code handling. Set up as a CHRON job for regular updating</h6>
-					<a class="info" href="https://github.com/jakewebber/HubSpotContactUpdate#readme">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">PHP</span>
-					<span class="skill language">HTML</span>
-					<span> | </span>
-					<span class="skill">HubSpot</span>
-					<span class="skill">REST API</span>
-				</div>
-			</figure>
-
-			<figure class="Portfolio-box php hovereffect">
-				<img class="img-responsive" src="img/wpcategory-tile.png">
-				<div class="overlay wp-category">
-					<h2>WordPress Taxonomy Import</h2>
-					<h6>Simple WordPress plugin for importing a CSV file as a taxonomy / nested categories into WordPress.</h6>
-					<a class="info" href="https://github.com/jakewebber/WPCategoryImport">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">PHP</span>
-					<span> | </span>
-					<span class="skill">WordPress</span>
-					<span class="skill">Linux Systems</span>
-				</div>
-			</figure>
-
-			<figure class="Portfolio-box vba hovereffect">
-				<img class="img-responsive" src="img/docsplitter-tile.png">
-				<div class="overlay doc-splitter">
-					<h2>Word Doc Splitter Macro</h2>
-					<h6>Word macro for batch-splitting hundreds of Word Doc into HTML files by delimiters. Auto-formats for a specific report template and performs robust format-error catching to ensure a complete split. </h6>
-					<a class="info" href="https://github.com/jakewebber/VBADocSplitter#readme">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">VBA</span>
-					<span> | </span>
-					<span class="skill">Visual Studio</span>
-				</div>
-			</figure>
-
-			<figure class="Portfolio-box csharp hovereffect">
-				<img class="img-responsive" src="img/memorypool-tile.png">
-				<div class="overlay memory-pool">
-					<h2>Memory Pool</h2>
-					<h6>3D memory-based game matching pool balls. Blls mimic pool table physics and collisions when clicked. Only two balls are visible at a time after displaying all for a brief second at the start.</h6>
-					<a class="info" href="https://github.com/jakewebber/Memory-Pool#readme">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">C#</span>
-					<span class="skill language">ASP</span>
-					<span> | </span>
-					<span class="skill">Unity</span>
-				</div>
-			</figure>
-
-			<figure class="Portfolio-box csharp hovereffect">
-				<img class="img-responsive" src="img/topwallpaper-tile.png">
-				<div class="overlay top-wallpaper">
-					<h2>Reddit Wallpaper Virtual Reality</h2>
-					<h6>Pulls the top most recent posts from the wallpapers subreddit and displays them in a virtual reality gallery.</h6>
-					<a class="info" href="https://github.com/jakewebber/Top-Wallpaper-VR">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">C#</span>
-					<span class="skill language">ASP</span>
-					<span class="skill language">JSON</span>
-					<span> | </span>
-					<span class="skill">Unity</span>
-				</div>
-			</figure>
-			<figure class="Portfolio-box java hovereffect">
-				<img class="img-responsive" src="img/wordsolver-tile.png">
-				<div class="overlay word-solver">
-					<h2>Word Solver</h2>
-					<h6>Solve for words of a specified length using dictionary algorithms based on letter frequencies. Optimized for solving word-based games, or simply searching words.</h6>
-					<a class="info" href="https://github.com/jakewebber/Word-Solver">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">Java</span>
-					<span> | </span>
-					<span class="skill">Data Visualization</span>
-				</div>
-			</figure>
-			<figure class="Portfolio-box java hovereffect">
-				<img class="img-responsive" src="img/arcade-tile.png">
-				<div class="overlay game-arcade">
-					<h2>Game Arcade</h2>
-					<h6>Renditions of classic arcade games like tetris with added features. More points are earned for higher difficulty.</h6>
-					<a class="info" href="https://github.com/jakewebber/GameArcade">Check It Out</a>
-				</div>
-				<div class="skills">
-					<span class="skill language">Java</span>
-					<span> | </span>
-					<span class="skill">Data Visualization</span>
-				</div>
-			</figure>
-		</div>
-		<hr>
-
-	</section>
-	<!--main-section-end-->
-	<section class="github-section">
-		<a class="current" href="https://github.com/jakewebber" target="_blank"><img class="github-logo img-responsive" src="img/github.png">
-		</a>
-	</section>
-
 
 	<div class="container">
 		<section class="main-section contact" id="contact">
@@ -752,40 +784,15 @@ Last updated: November 2016
 	<script type="text/javascript">
 		$(window).load(function() {
 
-
 			var $container = $('.portfolioContainer'),
 				$body = $('body'),
-				colW = 375,
 				columns = null;
-
-
-			$container.isotope({
-				// disable window resizing
-				resizable: true,
-				masonry: {
-					columnWidth: colW
-				}
-			});
-
-			$(window).smartresize(function() {
-				// check if columns has changed
-				var currentColumns = Math.floor(($body.width() - 30) / colW);
-				if (currentColumns !== columns) {
-					// set new column count
-					columns = currentColumns;
-					// apply width to container manually, then trigger relayout
-					$container.width(columns * colW)
-						.isotope('reLayout');
-				}
-
-			}).smartresize(); // trigger resize to set container width
-			$('.portfolioFilter a').click(function() {
-				$('.portfolioFilter .current').removeClass('current');
+			$('.portfolio-filter a').click(function() {
+				$('.portfolio-filter .current').removeClass('current');
 				$(this).addClass('current');
 
 				var selector = $(this).attr('data-filter');
 				$container.isotope({
-
 					filter: selector,
 				});
 				return false;

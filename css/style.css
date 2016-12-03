@@ -373,8 +373,8 @@ h1 {
 /* About  */
 
 .about {
-    padding: 50px 20px;
-	
+    padding-top: 50px;
+	padding-bottom: 50px;
     height: 100%;
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 	
 }
@@ -523,42 +523,67 @@ h1 {
 .main-section.charcoal {
     background: #303030;
 }
-/* Portfolio */
+.main-section.vanilla {
+    background: #eee;
+}
+.main-section.dark {
+    background: #111111;
+}
 
 .Portfolio-nav {
-    padding: 10px;
-    margin: auto;
+    display: flex;
+    padding: 0px;
+    text-align: center;
+    margin: 0 auto;
     width: auto;
     list-style: none;
-    text-align: center;
-    border-radius: 4px 4px 4px 4px;
-    -moz-border-radius: 4px 4px 4px 4px;
-    -webkit-border-radius: 4px 4px 4px 4px;
-    border: 0px solid #000000;
-    background: rgba(255, 255, 255, .2);
+    font-size: 0;
+}
+.Portfolio-nav ul{
+	padding: 0 0;
+	width: 100%;
 }
 .Portfolio-nav li {
+	border-top: 1px solid #777;
     display: inline;
+	background: #222;
 }
 .Portfolio-nav li a {
     display: inline-block;
     padding: 5px 22px;
     font-size: 12px;
+	height: 100%;
     line-height: 20px;
-    color: #222222;
-    border-radius: 4px;
-    text-transform: uppercase;
+    color: white;
+    margin: 0 auto;
+    display: inline-block;
+	text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    background: #f7f7f7;
-    margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
+.border-left{
+	border-left: 1px solid #777;	
+}
+.border-right{
+	border-right: 1px solid #777;	
+}
+.Portfolio-nav li a:hover {
+    background: #777;
+    color: #fff;
+    text-decoration: none;
+}
+.Portfolio-nav li a.current {
+    background: #C25B56;
+    color: #fff;
+    text-decoration: none;
+}
 .portfolioContainer {
-    max-width: 1140px;
-    margin: 10px auto;
-    padding-left: 15px;
+	width: 100%;
+	  padding:0;
+	  margin: 0;
+	  border-top: 1px solid #777;
 }
 .Portfolio-box {
     font: 300 16px/21px 'Open sans', Helvetica, Arial, sans-serif text-align: center;
@@ -571,16 +596,15 @@ h1 {
 .Portfolio-box h3 {
     color: white;
 }
-.Portfolio-nav li a:hover {
-    background: grey;
-    color: #fff;
-    text-decoration: none;
+
+.portfolio-filter span{
+	font-size: 20px;
+	color: #777;
 }
-.Portfolio-nav li a.current {
-    background: #C25B56;
-    color: #fff;
-    text-decoration: none;
+.portfolio-filter{
+display: flex;
 }
+
 .github-logo {
     margin: 15px auto 35px;
     border-radius: 5px 5px 5px 5px;
@@ -603,7 +627,7 @@ h1 {
     color: #fff;
     padding: 3px 7px;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 12px;
     background: #777777;
     color: white;
 }
@@ -625,9 +649,9 @@ h1 {
     transition-property: transform, opacity;
 }
 .main-section.portfolio {
-    padding-bottom: 60px;
-    background: #0a1526;
-    padding: 50px 20px;
+    padding: 0px 0px;
+	width: 100%;
+	padding-top: 30px;
 }
 
 
@@ -635,16 +659,16 @@ h1 {
     width: 80%;
 }
 .github-section {
-    background: #525564;
+    background: #111;
     background-size: cover;
-    padding: 20px 0 10px;
+    padding: 1px 0 3px;
     text-align: center;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
 .github-section:hover {
-    background: purple;
+    background: #5a0570;
     background-size: cover;
     padding: 20px 0 10px;
     text-align: center;
