@@ -33,6 +33,7 @@ Last updated: November 2016
 	<link href="css/timeline.css" rel="stylesheet" type="text/css">
 
 	<!-- Import Javascript -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -44,11 +45,12 @@ Last updated: November 2016
 </head>
 
 <body>
+<div class="preloader"></div>
+
 	<!--Header -->
 	<div class="header-bg">
 		<header class="animated header fadeIn delay-03s" id="header">
 			<div class="container header-info">
-				<h1 class="animated fadeInDown delay-1s">Jacob Webber</h1>
 				<ul class="description animated fadeInUp delay-1s">
 					<span class="animated fadeIn delay-1s">
 			</span>
@@ -138,21 +140,23 @@ Last updated: November 2016
 <!--ABOUT SECTION-->
 	<section class="main-section charcoal about" id="about">
 		<div class="container">
-			<div class="col-lg-9 col-sm-9 wow fadeInLeft delay-05s">
-				<p>My name is Jacob Webber and I am a developer with experience in software and full-stack web development. I possess a background in marketing and graphic design, which I channel into my <a class="scroll-to-fixed-fixed" href="#experience"><b>work</b></a> and <a class="scroll-to-fixed-fixed"href="#portfolio"><b>projects</b></a>. I gear much of my free time towards writing software and learning new development techniques with the latest tech.</p><p>With one college course remaining, I'll be graduating in Spring of 2016 with a bachelor's degree in Computer Science from the University of Georgia. I am actively seeking employment (full-time, contract-based, or internship) and willing to relocate.</p>
+			<div class="col-lg-8 col-sm-8">
+				<div class="intro wow fadeIn delay-03s">Hello, my name is <b>Jacob Webber.</b></div><br>
+				<div class="wow fadeInLeft delay-03s">
+				<p>
+				I am a programmer with experience in <a class="anchor-nav apps-nav" href="#portfolio"><b>software development</b></a> and full-stack <a class="anchor-nav web-nav" href="#portfolio"><b>web development</b></a>. My background in <a class="anchor-nav marketing-nav"href="#experience"><b>marketing</b></a> and <a class="graphic-design-nav"href="#graphic-design"><b>graphic design</b></a> is channeled into my <a class="anchor-nav" href="#experience"><b>work</b></a> and <a class="anchor-nav"href="#portfolio"><b>projects</b></a>. I gear much of my free time towards writing software and learning new <a class="anchor-nav skillset-nav"href="#skillset"><b>development skills</b></a> with the latest tech.<br>With one college course remaining, I'll be graduating in Spring of 2016 with a bachelor's degree in Computer Science from the University of Georgia. I am actively seeking employment (full-time, contract-based, or internship) and willing to relocate.</p>
+				</div>
 			</div>
-			<div class="col-lg-2 col-sm-6 wow fadeInRight delay-05s">
+			<div class="right wow fadeInRight delay-12s">
 				<hr>
 				<a href="resume.pdf" target="_blank">
 					<div class="linked"><i class="fa fa-file-pdf-o"></i> <span>RESUME</span>
 					</div>
 				</a>
-
 				<a href="https://www.linkedin.com/in/Jacob-Webber" target="_blank">
 					<div class="linked"><i class="fa fa-linkedin"></i> <span>LINKEDIN</span>
 					</div>
 				</a>
-
 				<a href="https://github.com/jakewebber" target="_blank">
 					<div class="linked"><i class="fa fa-github"></i> <span>GITHUB</span>
 					</div>
@@ -160,34 +164,35 @@ Last updated: November 2016
 				<hr>
 			</div>
 		</div>
-
 	</section>
 	<!--about end-->
 
 		<!--portfolio section-->
 	<section class="main-section charcoal portfolio " id="portfolio">
+	<h1>Projects</h1>
 			<div class="container portfolio-filter ">
 				<ul class="Portfolio-nav wow fadeIn delay-02s">
-					<li><a href="#" data-filter="*" class="border-left border-right current">All</a></li>
+					<li><a href="#" data-filter="*" class="option border-left border-right current">All</a></li>
 					<span>|</span>
-					<li><a href="#" data-filter=".app" class="border-left border-right">Applications</a></li>			
-					<li><a href="#" data-filter=".web" class="border-right">Web Development</a></li>
+					<li><a href="#" data-filter=".app" class="option apps border-left border-right">Applications</a></li>			
+					<li><a href="#" data-filter=".web" class="option web border-right">Web Development</a></li>
 					<span>|</span>		
-					<li><a href="#" data-filter=".java" class="border-right border-left">Java</a></li>
-					<li><a href="#" data-filter=".php" class="border-right">PHP</a></li>
-					<li><a href="#" data-filter=".csharp" class="border-right">C#</a></li>
-					<li><a href="#" data-filter=".vba" class="border-right">VBA</a></li>						
+					<li><a href="#" data-filter=".java" class="option border-right border-left">Java</a></li>
+					<li><a href="#" data-filter=".php" class="option border-right">PHP</a></li>
+					<li><a href="#" data-filter=".csharp" class="option border-right">C#</a></li>
+					<li><a href="#" data-filter=".vba" class="option border-right">VBA</a></li>						
 				</ul>
 			</div>
 			
 		<ul class="portfolio-container" id="rig">
     <li class="java app web">
         <a class="rig-cell" href="https://jakewebber.github.io/LoLQuickStats/" target="blank_">
-				<h2 class="proj-title" id="lol">LoL Quick Stats</h2>
+				<h2 class="proj-title" id="lol">League <br>Quick Stats</h2>
 				<img class="rig-img" src="img/lolquickstats-tile.jpg">
 				<span class="rig-overlay"></span>
 				<span class="rig-text"><h2>LoLQuickStats</h2>
-					<h6>The fastest stats for a League of Legends team lobby before loading in.<br> Uses optical character recognition and image comparison algorithms to quickly obtain information on your team's players from a screenshot.</h6>				<div class="skills">
+					<h6>The fastest stats for a League of Legends team lobby before loading in.<br> Uses optical character recognition and image comparison algorithms to quickly obtain information on your team's players from a screenshot.</h6>				
+					<div class="skills bottom">
 					<span class="skill language">Java</span>
 					<span class="skill language">CSS</span>
 					<span class="skill language">JSON</span>
@@ -203,7 +208,7 @@ Last updated: November 2016
             <span class="rig-overlay"></span>
             <span class="rig-text"><h2>HighWire 3D</h2>
 				<h6>Model 3D wireframe scenes with different projections, edit objects with dynamic controls and custom matrix transformations, and import / export as a simple CSV.</h6>
-				<div class="skills">
+				<div class="skills bottom">
 				<span class="skill language">Java</span>
 				<span> | </span>
 				<span class="skill">Pixel Manipulation</span>
@@ -219,7 +224,7 @@ Last updated: November 2016
             <span class="rig-overlay"></span>
             <span class="rig-text"><h2>HubSpot Contact Update</h2>
 				<h6>Script for cleaning and updating HubSpot contacts using their RESTful API. Outputs an HTMl page table of the contact updates. Includes robust response error code handling. Set up as a CHRON job for regular updating</h6>
-				<div class="skills">
+				<div class="skills bottom">
 				<span class="skill language">PHP</span>
 				<span class="skill language">HTML</span>
 				<span> | </span>
@@ -236,7 +241,7 @@ Last updated: November 2016
             <span class="rig-overlay"></span>
             <span class="rig-text"><h2>WordPress Taxonomy Import</h2>
 				<h6>Simple WordPress plugin for importing a CSV file as a taxonomy / nested categories into WordPress.</h6>
-				<div class="skills">
+				<div class="skills bottom">
 				<span class="skill language">PHP</span>
 				<span> | </span>
 				<span class="skill">WordPress</span>
@@ -252,7 +257,7 @@ Last updated: November 2016
             <span class="rig-overlay"></span>
             <span class="rig-text"><h2>Word Doc Splitter Macro</h2>
 				<h6>Word macro for batch-splitting hundreds of Word Doc into HTML files by delimiters. Auto-formats for a specific report template and performs robust format-error catching to ensure a complete split. </h6>
-				<div class="skills">
+				<div class="skills bottom">
 					<span class="skill language">VBA</span>
 					<span> | </span>
 					<span class="skill">Visual Studio</span>
@@ -266,8 +271,8 @@ Last updated: November 2016
 			<h2 class="proj-title" id="mempool">Memory Pool</h2>       
             <span class="rig-overlay"></span>
             <span class="rig-text"><h2>Memory Pool</h2>
-					<h6>3D memory-based game matching pool balls. Blls mimic pool table physics and collisions when clicked. Only two balls are visible at a time after displaying all for a brief second at the start.</h6>
-					<div class="skills">
+					<h6>3D memory-based game matching pool balls. Balls mimic pool table physics and collisions when clicked. Only two balls are visible at a time after displaying all for a brief second at the start.</h6>
+					<div class="skills bottom">
 					<span class="skill language">C#</span>
 					<span class="skill language">ASP</span>
 					<span> | </span>
@@ -283,7 +288,7 @@ Last updated: November 2016
             <span class="rig-text">
 				<h2>Reddit Wallpaper Virtual Reality</h2>
 				<h6>Pulls the top most recent posts from the wallpapers subreddit and displays them in a virtual reality gallery.</h6>
-				<div class="skills">
+				<div class="skills bottom">
 					<span class="skill language">C#</span>
 					<span class="skill language">ASP</span>
 					<span class="skill language">JSON</span>
@@ -301,7 +306,7 @@ Last updated: November 2016
             <span class="rig-text">
 				<h2>Word Solver</h2>
 				<h6>Solve for words of a specified length using dictionary algorithms based on letter frequencies. Optimized for solving word-based games, or simply searching words.</h6>
-				<div class="skills">
+				<div class="skills bottom">
 					<span class="skill language">Java</span>
 					<span> | </span>
 					<span class="skill">Data Visualization</span>
@@ -317,7 +322,7 @@ Last updated: November 2016
             <span class="rig-text">
 				<h2>Game Arcade</h2>
 				<h6>Renditions of classic arcade games like tetris with added features. More points are earned for higher difficulty.</h6>	
-				<div class="skills">
+				<div class="skills bottom">
 					<span class="skill language">Java</span>
 					<span> | </span>
 					<span class="skill">Data Structures</span>
@@ -334,7 +339,7 @@ Last updated: November 2016
 				<h2>Personal Website</h2>
 				<h6>A responsive and mobile-friendly personal site with a lot of custom CSS on top of some popular libraries. Built with Bootstrap, hosted with GitHub Pages. Source code found here.
 				</h6>	
-				<div class="skills">
+				<div class="skills bottom">
 					<span class="skill language">HTML</span>
 					<span class="skill language">CSS</span>
 					<span class="skill language">Javascript</span>	
@@ -355,7 +360,7 @@ Last updated: November 2016
 	
 	<!--- Experience Section -->
 	<section class="main-section experience">
-		<div class="container  graph" id="experience">
+		<div class="container" id="experience">
 			<h1>Experience</h1>
 			<hr>
 			<div class="row">
@@ -367,7 +372,7 @@ Last updated: November 2016
 						<!--Timeline -->
 						<ul class="timeline">
 							<!-- Item 1 -->
-							<li>
+							<li class="marketing">
 								<div class="direction-r">
 									<span class="title-wrapper"><span class="title">Web Developer Intern</span></span>
 									<span class="flag-wrapper">
@@ -384,6 +389,7 @@ Last updated: November 2016
 								</div>
 							</li>
 							<!-- Item 2 -->
+							<div class="graphic-design" id="graphic-design">
 							<li>
 								<div class="direction-r">
 									<span class="title-wrapper"><span class="title">Provisional Report & Graphic Designer</span></span>
@@ -397,11 +403,16 @@ Last updated: November 2016
 										<li>Edited status reports for clients, health risk assessments for presentations, and handouts of compiled statistics from health databases.</li>
 										<li>Designed Microsoft Office templates for more efficient future company publishes.</li>
 										<li>Instructed peers and employers on design techniques via Skype sessions and performed live revisions on projects to fit their specifications.</li>
+										<li>
+										<div class="skills">
+											<span class="skill">Microsoft Publisher</span>
+											<span class="skill">Microsoft Powerpoint</span>
+											<span class="skill">Graphic Design</span>
+										</div>
+										</li>	
 									</ul>
 								</div>
 							</li>
-							<!-- Item 3 -->
-							<!-- Item 2 -->
 							<li>
 								<div class="direction-r">
 									<span class="title-wrapper"><span class="title">Graphic & Video Designer</span></span>
@@ -414,9 +425,12 @@ Last updated: November 2016
 										<li>Created promotional videos with a post-production team for local music venues and theatres.</li>
 										<li>Designed album artworks and promotional graphics for local artists.</li>
 										<li>Updated and managed advertisements and brochures for start-up companies such as Direct Technology Resources.</li>
+
 									</ul>
+									
 								</div>
 							</li>
+							</div>
 						</ul>
 					</div>
 
@@ -451,9 +465,11 @@ Last updated: November 2016
 					<br>
 					<br>
 					<h2>Certifications</h2>
-					<span class="icon-header">HubSpot</span><img class="icon" src="img/hubspot.png">
-					<p>Inbound Marketing Certification
-						<br> May 2016 — June 2017</p>
+						<div class="marketing"><span class="icon-header">HubSpot</span><img class="icon" src="img/hubspot.png">
+						<p>Inbound Marketing Certification
+							<br> May 2016 — June 2017</p>
+							<a href="http://certification.hubspot.com/inbound-certification" target="blank_">More Information</a>
+					</div>
 					<br>
 					<br>
 					<br>
@@ -462,12 +478,12 @@ Last updated: November 2016
 					<span class="icon-header">Microsoft  Code Competition</span><img class="icon" src="img/microsoft.png">
 					<p>Made 1st place group. Groups of three solve as many problems as possible in three hours.
 						<br> September 2015</p>
-					<a href="https://msft3c.com/">More Information</a>
+					<a href="https://msft3c.com/" target="blank_">More Information</a>
 				</div>
 			</div>
 
-			<h2 align="center">Skills</h2>
-
+			<h1 align="center" id="skillset">Skills</h1>
+		<div class="skillset">
 			<div class="container wrapper wow fadeInUp delay-02s" id="graph">
 				<br>
 				<table id="q-graph">
@@ -587,6 +603,7 @@ Last updated: November 2016
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 	</section>
 	<!--experience section-end-->
@@ -658,10 +675,12 @@ Last updated: November 2016
 
 	<script type="text/javascript">
 		$(window).load(function() {
+		$(".preloader").fadeOut(3000);;
+		/*
 			$('.header').height($('.header').width() / 4);
 			$(window).resize(function() {
 				$('.header').height($('.header').width() / 4);
-			});
+			});*/
 		});
 
 		$(window).on('resize', function() {
@@ -767,17 +786,26 @@ Last updated: November 2016
 
 	<script type="text/javascript">
 		$(window).load(function() {
-
+				// Main navigation menu links
 			$('.main-nav li a').bind('click', function(event) {
 				var $anchor = $(this);
 
 				$('html, body').stop().animate({
 					scrollTop: $($anchor.attr('href')).offset().top - 50
-				}, 1500, 'easeInOutExpo');
-
+				}, 1000, 'easeInOutExpo');
 				event.preventDefault();
 			});
+			// Other anchor links
+			
 		})
+		
+		$('.anchor-nav').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 50
+			}, 1000, 'easeInOutExpo');
+			event.preventDefault();
+		});		
 	</script>
 
 	<script type="text/javascript">
@@ -786,6 +814,8 @@ Last updated: November 2016
 			var $container = $('.portfolio-container'),
 				$body = $('body'),
 				columns = null;
+				
+			// Click Portfolio Filter
 			$('.portfolio-filter a').click(function() {
 				$('.portfolio-filter .current').removeClass('current');
 				$(this).addClass('current');
@@ -796,7 +826,62 @@ Last updated: November 2016
 				});
 				return false;
 			});
-
+			
+			// Click Apps Nav
+			$('.apps-nav').bind('click', function(event) {
+				console.log("nav clicked");
+				$('.portfolio-filter .current').removeClass('current');
+				$('.apps').addClass('current');
+				var selector = $('.apps').attr('data-filter');
+				$container.isotope({
+					filter: selector,
+				});
+				return false;				
+			});
+			
+			// Click Web Dev Nav
+			$('.web-nav').bind('click', function(event) {
+				console.log("nav clicked");
+				$('.portfolio-filter .current').removeClass('current');
+				$('.web').addClass('current');
+				var selector = $('.web').attr('data-filter');
+				$container.isotope({
+					filter: selector,
+				});
+				return false;				
+			});
+			
+				// Click Web Dev Nav
+			$('.marketing-nav').bind('click', function(event) {
+				$('.marketing').addClass('pulse-animate');		
+				setTimeout(function() {
+					$('.marketing').removeClass('pulse-animate');							
+				}, 5000);
+			});			
+				// Click Skillset Nav
+			$('.skillset-nav').bind('click', function(event) {
+				$('.skillset').addClass('pulse-animate');		
+				setTimeout(function() {
+					$('.skillset').removeClass('pulse-animate');							
+				}, 5000);
+			});					
+			
+				// Click Graphic DesignNav
+			$('.graphic-design-nav').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 90
+			}, 1000, 'easeInOutExpo');
+			event.preventDefault();
+				$('.graphic-design').addClass('pulse-animate');			
+				setTimeout(function() {
+					$('.graphic-design').removeClass('pulse-animate');						
+				}, 5000);
+			});		
+			
+			
+			
+			// Click main nav
 			$('.navFilter a').click(function() {
 				$('.navFilter .current').removeClass('current');
 				$(this).addClass('current');

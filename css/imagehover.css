@@ -126,9 +126,11 @@
 	color: #eee;
 }
 #lol{
-	top: 30%;
+	top: 10%;
 	font-size: 45px;
 	font-family: 'beaufortforlol';
+	line-height: 110%;
+
 	font-weight: 50;
 }
 #hw3d{
@@ -198,6 +200,7 @@
     position:absolute;
     left:0;
     width:100%;
+	height: 100%;
     text-align:center;
     font-size:18px;
     font-weight:bold;
@@ -226,20 +229,20 @@
 
 @media (max-width: 1600px) {
    .rig-text h2 {
-    color: #fff;
-    text-align: center;
-    position: relative;
-	vertical-align: text-top;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    margin: 0px;
-}
-.rig-text  h6 {
-    padding: 5px;
-    line-height: 130%;
-    margin: 0 0 0px 0;
-	font-size: 12px;
-}
+		color: #fff;
+		text-align: center;
+		position: relative;
+		vertical-align: text-top;
+		font-size: 20px;
+		background: rgba(0, 0, 0, 0.6);
+		margin: 0px;
+	}
+	.rig-text  h6 {
+		padding: 5px;
+		line-height: 130%;
+		margin: 5px;
+		font-size: 13px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -252,4 +255,10 @@
     #rig li {
         width:100%;
     }
+		.rig-text  h6 {
+		padding: 5px;
+		line-height: 130%;
+		margin: 5px;
+		font-size: 18px;
+	}
 }
