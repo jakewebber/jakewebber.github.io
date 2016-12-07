@@ -251,7 +251,19 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+    #rig li {
+        width:50%;
+    }
+		.rig-text  h6 {
+		padding: 5px;
+		line-height: 130%;
+		margin: 5px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 500px) {
     #rig li {
         width:100%;
     }

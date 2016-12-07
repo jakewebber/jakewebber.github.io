@@ -399,7 +399,9 @@ h1 {
 	color: white;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	
+}
+.intro-body{
+ padding-left: 10%;
 }
 .intro b{
     color: rgb(239, 122, 122);
@@ -411,8 +413,8 @@ h1 {
 }
 
 .about {
+	float: right !important;
 	width: 100%;
-	padding-left: 20%;
     padding-top: 20px;
 	padding-bottom: 20px;
     height: 100%;
@@ -428,7 +430,7 @@ h1 {
     line-height: 200%;
 }
 .right{
-	float: left;
+	float: right;
 	    margin: 0;
     padding: 1em;
 }
@@ -570,6 +572,9 @@ h1 {
     overflow: hidden;
 }
 
+.no-bullet{
+	list-style: none;
+}
 /* Intro links */
 
 .marketing, .graphic-design, .skillset{
@@ -735,32 +740,47 @@ display: flex;
 .github-logo:hover {} img {
     max-width: 100%;
 }
+ .bottom {
+	bottom: 8px !important;
+	width: 100% !important;
+}
+
 .skills {
-    margin-top: 10px;
+	height: auto;
     display: block;
 	position: absolute;
 	margin: auto auto;
-	width: 100%;
 }
- .bottom{
-	bottom: 8px !important;
-}
+
 .skills .skill {
+	    margin-top: 10px;
+	margin-bottom: 10px;
     white-space: nowrap;
-    background: rgba(15, 18, 23, 0.4);
-    color: #fff;
+    background: #eee;
+    color: black;
     padding: 3px 7px;
     border-radius: 2px;
     font-size: 12px;
-    background: #777777;
-    color: white;
-}
-.Portfolio-box .skills:hover {
-    background: rgba(15, 18, 23, 0.4);
+    background: #aaa;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 .skills .language {
+	    margin-top: 10px;
+	margin-bottom: 10px;	
+	color: white;
     background: rgb(58, 58, 58);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;	
 }
+
+
+
+
+
+
 .isotope .isotope-item {
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
@@ -864,6 +884,8 @@ display: flex;
     color: #fff;
     background: #222222;
     transition: all 0.3s ease-in-out;
+	border-radius: 2px;
+
 }
 .social-link li a:hover,
 .social-link li a:focus {
