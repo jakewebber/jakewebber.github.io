@@ -1,5 +1,4 @@
 /* Work Timeline */
-
 /* ================ Timeline Media Queries ================ */
 
 @media screen and (max-width: 660px) {
@@ -18,28 +17,26 @@
     .flag {
         z-index: 15;
         color: black;
-		display: block !important;
-		left: 30px;
-		border: 1px solid #aaa !important;
-		border-left: 0px solid transparent !important;
+        display: block !important;
+        left: 30px;
+        border: 1px solid #aaa !important;
+        border-left: 0px solid transparent !important;
     }
-	.info {
-		display: block !important;
-		left: 30px !important;
-		border: 1px solid #aaa !important;
-		border-left: 0px solid transparent !important;
-	}
-	.title {
-		display: block !important;
-	}
-
+    .info {
+        display: block !important;
+        left: 30px !important;
+        border: 1px solid #aaa !important;
+        border-left: 0px solid transparent !important;
+    }
+    .title {
+        display: block !important;
+    }
     .time-wrapper {
         display: block;
         position: relative;
         margin: 4px 0 0 0;
         z-index: 14;
     }
-
     .direction-r .time-wrapper {
         float: none;
     }
@@ -53,7 +50,6 @@
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
         z-index: 15;
     }
-
     .direction-r .desc {
         position: relative;
         margin: 1em 1em 0 1em;
@@ -66,16 +62,13 @@
         margin: 1em 4em 0 4em;
     }
 }
-
-
 /* Default sizing */
 
 hr {
-  background-color: black !important;
-  float: center;
-z-index: 100;
+    background-color: black !important;
+    float: center;
+    z-index: 100;
 }
-
 .timeline {
     position: relative;
     width: 100%;
@@ -117,7 +110,7 @@ z-index: 100;
     z-index: 5;
 }
 .timeline li {
-	margin: 10px;
+    margin: 10px;
 }
 .timeline li:after {
     content: "";
@@ -139,8 +132,8 @@ z-index: 100;
     width: 100%;
     margin: 0px 0px;
 }
-.flag-wrapper a{
-	    text-decoration: none;
+.flag-wrapper a {
+    text-decoration: none;
 }
 .flag {
     position: relative;
@@ -153,8 +146,8 @@ z-index: 100;
     color: rgb(211, 69, 69);
 }
 .direction-r .flag {
-	border-bottom: solid 1px #aaa;
-	border-top: solid 1px #aaa;
+    border-bottom: solid 1px #aaa;
+    border-top: solid 1px #aaa;
 }
 .direction-r .flag:before {
     left: -21px;
@@ -173,20 +166,19 @@ z-index: 100;
     border-width: 8px;
     pointer-events: none;
 }
-
 .info {
     font-weight: 500;
     display: inline-block;
-	position: relative;
-	width: auto;
+    position: relative;
+    width: auto;
     white-space: nowrap;
     color: black;
     padding: 6px 12px;
     border-radius: 2px;
     font-size: 14px;
     background: #ddd;
-	border-bottom: solid 1px #aaa;
-	border-top: solid 1px #aaa;
+    border-bottom: solid 1px #aaa;
+    border-top: solid 1px #aaa;
 }
 .info:before {
     left: -21px;
@@ -205,17 +197,14 @@ z-index: 100;
     border-width: 8px;
     pointer-events: none;
 }
-
-.title{
-	right: 5px;
-	border-right: solid 1px #aaa;
+.title {
+    right: 5px;
+    border-right: solid 1px #aaa;
 }
-
-.date{
-	z-index: -3;
-	left: 5px;
+.date {
+    z-index: -3;
+    left: 5px;
 }
-
 .desc {
     margin: 1em 0.75em 0 0;
     font-size: 0.77777em;

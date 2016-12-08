@@ -81,7 +81,6 @@ p {
 }
 /* Headers */
 
-
 .header {
     text-align: center;
     background: url(../img/atlanta.png);
@@ -93,28 +92,25 @@ p {
     -moz-transition: all 2s ease-in-out 2s;
     -webkit-transition: all 2s ease-in-out 2s;
 }
-@media screen and (max-width: 480px){
-	.header {
-		height: 400px !important;
-	}
+@media screen and (max-width: 480px) {
+    .header {
+        height: 500px !important;
+    }
 }
-
 .header hr {
     width: 30%;
 }
-@media screen and (min-width: 480px){
-	.header-info {
-		position: relative
-	}
+@media screen and (min-width: 480px) {
+    .header-info {
+        position: relative
+    }
 }
-
-@media screen and (max-width: 480px){
-	.header-info {
-		position: relative !important;
-		height: 300px !important;
-	}
+@media screen and (max-width: 480px) {
+    .header-info {
+        position: relative !important;
+        height: 300px !important;
+    }
 }
-
 .header-bg {
     background: black;
 }
@@ -126,7 +122,7 @@ p {
     width: 200px;
     height: 250;
     margin: auto;
-	margin-top: 50px;
+    margin-top: 50px;
     text-align: center;
 }
 .headshot-box span {
@@ -281,9 +277,9 @@ h1 {
 .main-nav-outer {
     display: flex;
     border-bottom: 0px solid #dddddd;
-	-webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -368,57 +364,69 @@ h1 {
 .main-section {
     padding: 90px 20px;
 }
-
 /* Typing effect */
+
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end 4;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    
+    border-right: .15em solid transparent;
+    /* The typwriter cursor */
+    
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end 4;
 }
-
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
-
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(239, 122, 122); }
-  100%{
-	  border-color: transparent;
-  }
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: rgb(239, 122, 122);
+    }
+    100% {
+        border-color: transparent;
+    }
 }
-
 /* About  */
-.intro{
-	font-size: 36px;
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-}
-.intro-body{
- padding-left: 10%;
-}
-.intro b{
-    color: rgb(239, 122, 122);
-	text-shadow: rgba(0,0,0,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
-}
-.intro br{
-	display: block;
-   margin: 10px 0;
-}
 
+.intro {
+    font-size: 36px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+@media screen and (min-width: 800px) {
+    .intro-body {
+        padding-left: 15%;
+    }
+}
+.intro b {
+    font-family: 'Arvo', sans-serif;
+}
+.intro br {
+    display: block;
+    margin: 10px 0;
+}
 .about {
-	float: right !important;
-	width: 100%;
+    float: right !important;
+    width: 100%;
     padding-top: 20px;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
     height: 100%;
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 	
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .about h1 {
     color: white;
@@ -429,19 +437,18 @@ h1 {
     font-size: 17px;
     line-height: 200%;
 }
-.right{
-	float: right;
-	    margin: 0;
+.right {
+    float: right;
+    margin: 0;
     padding: 1em;
 }
-@media screen and (min-width: 480px){
-	.about p{
-		/*	text-indent: 50px;
+@media screen and (min-width: 480px) {
+    .about p {
+        /*	text-indent: 50px;
 			padding-left: 20%;
 			*/
-	}
+    }
 }
-
 .about a {
     color: rgb(239, 122, 122);
     text-align: center;
@@ -450,15 +457,14 @@ h1 {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;	
+    -webkit-transition: all 0.3s ease-in-out;
 }
 .about a:hover {
     color: #f9e5e5;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;	
+    -webkit-transition: all 0.3s ease-in-out;
 }
-
 .about i {
     width: 30px;
 }
@@ -571,55 +577,54 @@ h1 {
 .experience-list-col2 {
     overflow: hidden;
 }
-
-.no-bullet{
-	list-style: none;
+.no-bullet {
+    list-style: none;
 }
 /* Intro links */
 
-.marketing, .graphic-design, .skillset{
+.marketing,
+.graphic-design,
+.skillset,
+.college {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-	border: 1px solid transparent;
-	border-radius: 2px;
+    border: 1px solid transparent;
+    border-radius: 2px;
 }
-
-.pulse-animate{
-	  -webkit-animation: borderchange 5s 1;
+.pulse-animate {
+    -webkit-animation: borderchange 5s 1;
 }
-
 @-webkit-keyframes borderchange {
-  0%{
-	  border-color: transparent;
-  }
-20%{
-	  border-color: #d14747;
+    0% {
+        border-color: transparent;
+    }
+    20% {
+        border-color: #d14747;
+    }
+    80% {
+        border-color: black;
+    }
+    100% {
+        border-color: transparent;
+    }
 }
-  80%{
-	  border-color: black;
-  }
-  100% {
-	border-color: transparent;
-  }
-}
-
 @keyframes borderchange {
-	0%{
-	  border-color: transparent;
-	}
-	60%{
-	  border-color: #d14747;
-	}
-	80%{
-	  border-color: black;
-	}
-	100% {
-	border-color: transparent;
-	}
+    0% {
+        border-color: transparent;
+    }
+    60% {
+        border-color: #d14747;
+    }
+    80% {
+        border-color: black;
+    }
+    100% {
+        border-color: transparent;
+    }
 }
-
 /* Section Colors */
+
 .main-section.alabaster {
     background: #fafafa;
 }
@@ -632,12 +637,24 @@ h1 {
 .main-section.dark {
     background: #111111;
 }
-
+.fade-bg {
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 1) 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+    /* IE6-9 */
+}
 .Portfolio-nav {
-	-webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	background: rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     display: block;
     padding: 0px;
     text-align: center;
@@ -646,48 +663,43 @@ h1 {
     list-style: none;
     font-size: 0;
 }
-.Portfolio-nav ul{
-	padding: 0 0;
-	width: 100%;
-	display: block;
-	
-	
+.Portfolio-nav ul {
+    padding: 0 0;
+    width: 100%;
+    display: block;
 }
 .Portfolio-nav li {
-	border-top: 1px solid #777;
+    border-top: 1px solid #777;
     display: inline-block;
-	background: #222;
-	
+    background: #222;
 }
-
 .Portfolio-nav li a {
     display: flex;
     padding: 5px 22px;
     font-size: 12px;
-	height: 100%;
+    height: 100%;
     line-height: 20px;
     color: white;
     margin: 0 auto;
-	text-transform: uppercase;
+    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-	width: 100%;
-	text-align: center;
+    width: 100%;
+    text-align: center;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
-.border-left{
-	border-left: 1px solid #777;	
+.border-left {
+    border-left: 1px solid #777;
 }
-.border-right{
-	border-right: 1px solid #777;	
+.border-right {
+    border-right: 1px solid #777;
 }
 @media (max-width: 765px) {
-    .border-right{
-		border: 1px solid #777;
-	}
+    .border-right {
+        border: 1px solid #777;
+    }
 }
-
 .Portfolio-nav li a:hover {
     background: #777;
     color: #fff;
@@ -699,14 +711,14 @@ h1 {
     text-decoration: none;
 }
 .portfolio-container {
-	position: relative;
-	width: 100%;
-	padding:0px;
-	margin: 0px;
-	border-top: 1px solid #777;
-	-webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px solid #777;
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
 }
 .Portfolio-box {
     font: 300 16px/21px 'Open sans', Helvetica, Arial, sans-serif text-align: center;
@@ -719,15 +731,13 @@ h1 {
 .Portfolio-box h3 {
     color: white;
 }
-
-.portfolio-filter span{
-	font-size: 20px;
-	color: #777;
+.portfolio-filter span {
+    font-size: 20px;
+    color: #777;
 }
-.portfolio-filter{
-display: flex;
+.portfolio-filter {
+    display: flex;
 }
-
 .github-logo {
     margin: 15px auto 35px;
     border-radius: 5px 5px 5px 5px;
@@ -740,21 +750,19 @@ display: flex;
 .github-logo:hover {} img {
     max-width: 100%;
 }
- .bottom {
-	bottom: 8px !important;
-	width: 100% !important;
+.bottom {
+    bottom: 8px !important;
+    width: 100% !important;
 }
-
 .skills {
-	height: auto;
+    height: auto;
     display: block;
-	position: absolute;
-	margin: auto auto;
+    position: absolute;
+    margin: auto auto;
 }
-
 .skills .skill {
-	    margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     white-space: nowrap;
     background: #eee;
     color: black;
@@ -767,26 +775,19 @@ display: flex;
     -webkit-transition: all 0.3s ease-in-out;
 }
 .skills .language {
-	    margin-top: 10px;
-	margin-bottom: 10px;	
-	color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
     background: rgb(58, 58, 58);
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;	
+    -webkit-transition: all 0.3s ease-in-out;
 }
-
-
-
-
-
-
 .isotope .isotope-item {
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     transition-duration: 1s;
 }
-
 .isotope .isotope-item {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
@@ -794,11 +795,9 @@ display: flex;
 }
 .main-section.portfolio {
     padding: 0px 0px;
-	width: 100%;
-	padding-top: 30px;
+    width: 100%;
+    padding-top: 30px;
 }
-
-
 .main-section.portfolio hr {
     width: 80%;
 }
@@ -831,12 +830,13 @@ display: flex;
 .main-section.contact h1 {
     color: black;
 }
-.main-section.contact {
-}
-.contact-info-box {
+.main-section.contact {} .contact-info-box {
+    border-radius: 2px;
+    width: 375px;
     font-size: 15px;
-    margin: 0 0 14px 68px;
-    padding-left: 0;
+    margin: 0 0 14px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .contact-info-box h3 {
     font-size: 18px;
@@ -845,34 +845,52 @@ display: flex;
     width: 102px;
     margin-right: 12px;
     line-height: 28px;
+    color: #eee;
 }
 .contact-info-box h3 i {
     font-style: normal;
     font-size: 20px;
-    color: #222222;
+    color: #eee;
     font-family: 'FontAwesome';
     font-weight: normal;
     margin-right: 7px;
 }
 .contact-info-box span {
+    color: #eee;
+    min-width: 40px;
+    float: left;
+    font-size: 20px;
     line-height: 28px;
     display: block;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.contact-info-box span:hover {
+    color: #f78080;
 }
 .contact-info-box a {
+    min-width: 40px;
     color: #777;
+}
+.contact-info-bg {
+    background: rgba(0, 0, 0, .7);
+    float: left;
+    padding: 5px;
+    border-radius: 3px;
 }
 .social-link {
     padding: 35px 0;
-    margin: 0 0 0 200px;
+    margin: 0 0 0 20px;
     display: block;
     overflow: hidden;
     list-style: none;
+    float: left;
 }
 .social-link li {
     float: left;
     margin-right: 8px;
-
 }
 .social-link li a {
     display: block;
@@ -884,12 +902,13 @@ display: flex;
     color: #fff;
     background: #222222;
     transition: all 0.3s ease-in-out;
-	border-radius: 2px;
-
+    border-radius: 2px;
+    border: 1px solid #aaa;
 }
 .social-link li a:hover,
 .social-link li a:focus {
     text-decoration: none;
+    border: 1px solid transparent;
 }
 .linkedin a:hover {
     background: #2469A1;
@@ -1006,22 +1025,23 @@ display: flex;
 .res-nav_click:focus {
     color: #d14540 !important;
 }
-
-
-
 /* CSS Loader */
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.preloader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: black;
-	
-}
 
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: black;
+}
 /* Animation Timers */
 
 .delay-02s {
