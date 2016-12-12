@@ -335,7 +335,7 @@ h1 {
     border-right: 1px solid #333;
 }
 .main-nav li a.current {
-    background: #C25B56 !important;
+    background: #BF1531 !important;
     color: #fff;
     text-decoration: none;
 }
@@ -946,7 +946,7 @@ h1 {
 .input-btn {
     width: 200px;
     height: 50px;
-    background: #d3463f;
+    background: #BF1531;
     border-radius: 2px;
     color: #ffffff;
     font-size: 14px;
