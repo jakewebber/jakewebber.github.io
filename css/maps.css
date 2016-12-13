@@ -1,7 +1,6 @@
 // variables - fonts 
 $primary-font: 'Lora',
 serif;
-// rem fallback - credits: http://zerosixthree.se/
 @function calculateRem($size) {
     $remSize: $size / 16px;
     @return $remSize * 1rem;
