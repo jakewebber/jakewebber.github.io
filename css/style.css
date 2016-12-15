@@ -83,7 +83,7 @@ p {
 
 .header {
     text-align: center;
-    background: url(../img/atlanta.png);
+    background: url(../img/atlanta.jpg);
     background-attachment: fixed;
     background-position: center;
     margin: auto auto;
@@ -623,6 +623,16 @@ h1 {
         border-color: transparent;
     }
 }
+
+.fade-line{ 
+	z-index: -1;
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#777), to(#eee));
+}
 /* Section Colors */
 
 .main-section.alabaster {
@@ -755,7 +765,15 @@ h1 {
     display: block;
     position: absolute;
     margin: auto auto;
+    font-size: 12px;
+	line-height: 22px;
 }
+@media screen and (max-width: 800px) {
+    .skills {
+        font-size: 10px;
+    }
+}
+
 .skills .skill {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -764,7 +782,6 @@ h1 {
     color: black;
     padding: 3px 7px;
     border-radius: 2px;
-    font-size: 12px;
     background: #aaa;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -834,6 +851,7 @@ h1 {
     margin: 0 0 14px 5px;
     padding-left: 5px;
     padding-right: 5px;
+	padding-bottom: 2px;
 }
 .contact-info-box h3 {
     font-size: 18px;
