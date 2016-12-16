@@ -198,8 +198,8 @@
 .ticks {
     position: relative;
     top: -200px;
-    left: 8px;
-    width: 70%;
+    left: -55px;
+    width: 675px;
     height: 200px;
     z-index: 1;
     margin: auto;
