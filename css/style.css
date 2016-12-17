@@ -51,7 +51,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: normal;
-    color: #888888;
+    color: #666666;
     margin: 0;
 }
 h2 {
@@ -115,6 +115,7 @@ p {
     background: black;
 }
 .headshot-block {
+	position: fixed !important;
     max-width: 993px;
     margin: 0 auto;
 }
@@ -178,6 +179,11 @@ p {
 	float: left;
     display: inline;
     margin: 0 10px;
+}
+@media-screen and (min-width: 480px) {
+	.headshot ul li{
+		float: none;
+	}
 }
 .headshot ul li a {
     font-family: 'FontAwesome';
@@ -648,13 +654,13 @@ h1 {
     background: #111111;
 }
 .fade-bg {
-    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 0) 100%);
     /* FF3.6-15 */
     
-    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     
-    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 1) 100%);
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 50%, rgba(238, 238, 238, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
@@ -723,7 +729,8 @@ h1 {
     text-decoration: none;
 }
 .Portfolio-nav li a.current {
-    background: #C25B56;
+    background: #BF1531;
+	border-color: #BF1531 !important;
     color: #fff;
     text-decoration: none;
 }
@@ -789,7 +796,7 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     white-space: nowrap;
-    background: #eee;
+    background: #aaa;
     color: black;
     padding: 3px 7px;
     border-radius: 2px;
@@ -797,12 +804,14 @@ h1 {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+		border: 1px solid #222;
+
 }
 .skills .language {
     margin-top: 10px;
     margin-bottom: 10px;
     color: white;
-    background: rgb(58, 58, 58);
+    background: #777;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1024,9 +1033,9 @@ h1 {
 /* Footer */
 
 .footer {
-    -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px -8px 30px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px -8px 30px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px -8px 30px 0px rgba(0, 0, 0, 1);
     background: url(../img/wood.jpg) left top repeat;
     padding: 20px 0 20px;
 }
