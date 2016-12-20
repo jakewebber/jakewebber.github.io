@@ -85,7 +85,7 @@ p {
     text-align: center;
     background: url(../img/atlanta.jpg);
     background-attachment: fixed;
-    background-position: center;
+	background-repeat: no-repeat;
     margin: auto auto;
     transition: all 2s ease-in-out 2s;
     -moz-transition: all 2s ease-in-out 2s;
