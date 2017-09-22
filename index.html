@@ -126,9 +126,9 @@ Last updated: November 2016
             <div class="intro-body col-sm-10">
                 <div class="wow fadeInLeft delay-03s">
                     <p>
-                        Results-oriented programmer with experience in <a class="anchor-nav apps-nav" href="#portfolio"><b>software development</b></a> and full-stack <a class="anchor-nav web-nav" href="#portfolio"><b>web development</b></a>. Maintains a comprehensive background in <a class="anchor-nav marketing-nav" href="#experience"><b>marketing</b></a> and <a class="graphic-design-nav" href="#graphic-design"><b>graphic design</b></a> channeled into diverse types of <a class="anchor-nav" href="#experience"><b>work</b></a> and successful <a class="anchor-nav" href="#portfolio"><b>projects</b></a>. Diligently improving performance learning new <a class="anchor-nav skillset-nav" href="#skillset"><b>development skills</b></a> with the the most current technology.
-                        <br>Actively seeking professional opportunities upon graduation in the Spring of 2017 with a <a class="anchor-nav college-nav" href="#experience"><b>Bachelor's degree of Computer Science</b></a>. Flexible and willing to travel or relocate.
-                    </p>
+                        I'm a software engineer at <a class="anchor-nav swe-nav" href="#experience"><b>Apogee Interactive</b></a> in Atlanta, building web applications for the energy industry.
+						In my spare time I work on a few<a class="anchor-nav apps-nav" href="#portfolio"><b>apps</b></a> and <a class="anchor-nav web-nav" href="#portfolio"><b>websites</b></a>. I maintain a comprehensive background in <a class="anchor-nav marketing-nav" href="#experience"><b>marketing</b></a> and <a class="graphic-design-nav" href="#graphic-design"><b>graphic design</b></a> channeled into diverse types of <a class="anchor-nav" href="#experience"><b>work</b></a> and successful <a class="anchor-nav" href="#portfolio"><b>projects</b></a>. I strive to keep my <a class="anchor-nav skillset-nav" href="#skillset"><b>development skills</b></a> up to date across a full stack of new and emergent technologies.
+                       </p>
                 </div>
             </div>
             <div class="right wow fadeInRight delay-12s">
@@ -357,6 +357,42 @@ Last updated: November 2016
 
                         <!--Timeline -->
                         <ul class="timeline">
+						<!-- Item 0 -->
+							<div class="swe">
+                            <li>
+                                <div class="direction-r">
+                                    <span class="flag-wrapper">
+										<a href="http://www.apogee.net"><img class="circle" src="img/apogee.png"></a>
+										<span class="info-wrapper">
+										<span class="info date">May 2017 - Present</span>
+                                    <span class="flag">Apogee Interactive</span>
+                                    <span class="info title">Software Engineer</span>
+                                    </span>
+                                    <ul class="bullets">
+										<li>Designing and developing applications related to the energy industry in a .NET MVC environment.</li>
+										<li>Researched and implemented a rules engine solution for a dynamic email automation system.</li>
+                                        <li>Developing internal tools for managing client subscriptions and creating dynamic conditional rules for a rules engine.</li>									
+                                        <li>Refactoring legacy code for performance improvements and cleaner code base.</li>
+                                        <li class="no-bullet">
+                                            <div class="skills">
+                                                <span class="skill language">HTML / CSS</span>
+                                                <span class="skill language">C#</span>
+                                                <span class="skill language">Typescript</span>
+                                                <span class="skill language">KnockoutJS</span>
+                                                <span class="skill language">SQL</span>
+                                                <span>|</span>
+                                                <span class="skill">Visual Studio</span>
+                                                <span class="skill">MS SQL Server</span>
+                                                <span class="skill">Chrome DevTools</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+							<br>
+                            <span class="fade-line"></span>
+							<br>
+							</div>
                             <!-- Item 1 -->
 							<div class="marketing">
                             <li>
@@ -890,8 +926,16 @@ Last updated: November 2016
                 });
                 return false;
             });
+			// Click SWE Nav
+            $('.swe-nav').bind('click', function(event) {
+                $('.swe').addClass('pulse-animate');
+                setTimeout(function() {
+                    $('.swe').removeClass('pulse-animate');
+                }, 5000);
+            });
 
-            // Click Web Dev Nav
+
+            // Click Marketing Nav
             $('.marketing-nav').bind('click', function(event) {
                 $('.marketing').addClass('pulse-animate');
                 setTimeout(function() {
