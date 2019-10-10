@@ -131,7 +131,8 @@ p {
 }
 .headshot {
     border-radius: 2px;
-    box-shadow: 0px 0px 0px 7px rgba(241, 241, 241, 0.80);
+    border: 4px solid #ddd;
+    /* box-shadow: 0px 0px 0px 7px rgba(241, 241, 241, 0.80); */
     margin: 7px 7px 25px 7px;
 }
 .headshot-shadow {
@@ -165,7 +166,7 @@ p {
     margin: 0;
     list-style: none;
     position: absolute;
-    left: 0;
+    left: 25px;
     top: 50%;
     width: 100%;
     text-align: center;
@@ -667,11 +668,14 @@ h1 {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
     /* IE6-9 */
 }
-.Portfolio-nav {
+.portfolio-nav {
     -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
     display: block;
     padding: 0px;
     text-align: center;
@@ -680,17 +684,35 @@ h1 {
     list-style: none;
     font-size: 0;
 }
-.Portfolio-nav ul {
+.portfolio-nav ul {
     padding: 0 0;
     width: 100%;
     display: block;
 }
-.Portfolio-nav li {
-    border-top: 1px solid #555;
-    display: inline-block;
-    background: #111;
+
+.portfolio-nav li:first-child{
+    border-top-left-radius: 23px;
+    border-left: 1px solid #555;
 }
-.Portfolio-nav li a {
+
+.portfolio-nav li:last-child{
+    border-top-right-radius: 23px;
+}
+
+.portfolio-nav li {
+    border-top: 1px solid #555;
+    border-right: 1px solid #555;
+    display: inline-block;
+    background-color: #111;
+    overflow: hidden;
+}
+.portfolio-nav li :hover {
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+.portfolio-nav li a {
     display: flex;
     padding: 5px 22px;
     font-size: 12px;
@@ -706,6 +728,8 @@ h1 {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
+
+
 .border-left {
     border-left: 1px solid #555;
 }
@@ -724,12 +748,8 @@ h1 {
 	}
 }
 
-.Portfolio-nav li a:hover {
-    background: #555;
-    color: #fff;
-    text-decoration: none;
-}
-.Portfolio-nav li a.current {
+
+.portfolio-nav li a.current {
     background: #BF1531;
 	border-color: #BF1531 !important;
     color: #fff;
@@ -746,7 +766,8 @@ h1 {
     box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
 }
 .Portfolio-box {
-    font: 300 16px/21px 'Open sans', Helvetica, Arial, sans-serif text-align: center;
+    font: 300 16px/21px 'Open sans', Helvetica, Arial, sans-serif;
+    text-align: center;
     height: 350px;
     width: 350px;
     overflow: hidden;
@@ -772,7 +793,7 @@ h1 {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
-.github-logo:hover {} img {
+.github-logo:hover img {
     max-width: 100%;
 }
 .bottom {
@@ -799,13 +820,12 @@ h1 {
     white-space: nowrap;
     background: #aaa;
     color: black;
-    padding: 3px 7px;
-    border-radius: 2px;
-    background: #aaa;
+    padding: 3px 10px;
+    border-radius: 1em;
+    background: #ccc;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-		border: 1px solid #222;
 
 }
 .skills .language {

@@ -140,7 +140,7 @@ hr {
     position: relative;
     display: inline-block;
     background: #BF1531;
-    padding: 6px 12px;
+    padding: 6px 18px;
     font-weight: 500;
     font-size: 14px;
     text-align: left;
@@ -175,7 +175,7 @@ hr {
     width: auto;
     white-space: nowrap;
     color: white;
-    padding: 6px 12px;
+    padding: 6px 18px;
     border-radius: 2px;
     font-size: 14px;
     background: #333;
@@ -202,6 +202,8 @@ hr {
 .title {
     right: 5px;
     border-right: solid 1px #aaa;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
 }
 .date {
     z-index: -3;
