@@ -715,7 +715,7 @@ h1 {
 .portfolio-nav li a {
     display: flex;
     padding: 5px 22px;
-    font-size: 12px;
+    font-size: 1.3rem;
     height: 100%;
     line-height: 20px;
     color: white;
@@ -782,6 +782,7 @@ h1 {
     color: #777;
 }
 .portfolio-filter {
+    max-width: 800px;
     display: flex;
 }
 .github-logo {
