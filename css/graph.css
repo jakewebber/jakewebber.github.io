@@ -28,7 +28,7 @@
     display: inset-block;
     position: relative;
     height: 200px;
-    width: 80%;
+    width: 325px;
     background: transparent;
     font-size: 11px;
     margin: auto auto;
@@ -83,13 +83,12 @@
     color: #AAA;
 }
 #q-graph #q1 {
-    left: 40px
-}
+    left: 224px;}
 #q-graph #q2 {
-    left: 270px;
+    left: 450px;
 }
 #q-graph #q3 {
-    left: 500px;
+    left: 678px;
 }
 #q-graph tbody th {
     font-weight: normal;
@@ -173,9 +172,9 @@
     font-size: 12px;
     text-align: left;
     display: inline-block;
-    left: -200%;
+    left: -11px;
     position: absolute;
-    bottom: -35px;
+    bottom: -32px;
     padding: 2px;
     transition: all .3s ease;
 }
@@ -194,8 +193,7 @@
 }
 .ticks {
     position: relative;
-    top: -200px;
-    left: -55px;
+    left: -254px;
     width: 675px;
     height: 200px;
     z-index: 1;

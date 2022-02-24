@@ -23,7 +23,8 @@ Last updated: November 2016
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <!-- Import CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
@@ -34,6 +35,7 @@ Last updated: November 2016
     <link href="css/maps.css" rel="stylesheet" type="text/css">
 
     <!-- Import Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC0JqtVuW6N6GDV8JSfAfEZ2dJfcTLwiU" defer="defer" type="text/javascript"></script>	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
@@ -42,21 +44,22 @@ Last updated: November 2016
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script type="text/javascript" src="js/gmaps.js"></script>
- 
+
 </head>
 
 <body>
     <div class="preloader"></div>
-
     <!--Header -->
     <div class="header-bg" id="top">
-        <header class="animated header fadeIn delay-03s" id="header">
+        <header class="animated header fadeIn delay-03s d-flex" id="header">
             <div class="container header-info">
                 <ul class="description animated fadeInUp delay-1s">
                     <span class="animated fadeIn delay-1s">
 			</span>
+
+                    <div class="intro wow fadeIn delay-03s pt-3">Jacob Webber</div>
                     <div class="headshot-box">
                         <div class="headshot wow fadeInDown delay-03s">
                             <div class="headshot-shadow">
@@ -70,16 +73,13 @@ Last updated: November 2016
                                 <li>
                                     <a href="https://github.com/jakewebber" target="_blank" class="fa-github"></a>
                                 </li>
-                                <!-- <li>
-                                    <a href="https://www.facebook.com/jakeweb" target="_blank" class="fa-facebook"></a>
-                                </li> -->
                             </ul>
                         </div>
                     </div>
-                    <hr class="fade-line">
-                    <div class="intro wow fadeIn delay-03s">Hello, I am Jacob Webber.</div>
                     <br>
-                    <li>Developer located in Atlanta, Georgia.</li>
+                    <li>Full Stack Software Developer</li>
+                    <div class="sub">Located in Atlanta, Georgia</li>
+
                 </ul>
             </div>
         </header>
@@ -122,18 +122,17 @@ Last updated: November 2016
 <!--ABOUT SECTION-->
     <section class="main-section charcoal about" id="about">
         <div class="container">
-
-            <div class="intro-body col-sm-10">
+            <div class="row">
+            <div class="intro-body col-lg-10">
                 <div class="wow fadeInLeft delay-03s">
                     <p>
-                        I'm a software engineer at <a class="anchor-nav swe-nav" href="#experience"><b>Apogee Interactive</b></a> in Atlanta, building web applications for the energy industry.
-                        I work on a few <a class="anchor-nav apps-nav" href="#portfolio"><b>projects</b></a>, <a class="anchor-nav web-nav" href="#portfolio"><b>websites</b></a>, 
+                        I'm a full-stack software devloper building analytics and intelligence products at <a class="anchor-nav evestment-nav" href="#experience"><b>eVestment</b></a> for institutional investors.
+                        <br>I work on a few <a class="anchor-nav apps-nav" href="#portfolio"><b>personal projects</b></a> 
                         and <a class="anchor-nav teaching-nav" href="#experience"><b>teach high school</b></a> computer science in my spare time. 
-                        I maintain a comprehensive background in <a class="anchor-nav marketing-nav" href="#experience"><b>marketing</b></a> and <a class="graphic-design-nav" href="#graphic-design"><b>graphic design</b></a> channeled into diverse types of <a class="anchor-nav" href="#experience"><b>work</b></a> and successful <a class="anchor-nav" href="#portfolio"><b>projects</b></a>. I strive to keep my <a class="anchor-nav skillset-nav" href="#skillset"><b>development skills</b></a> up to date across a full stack of new and emergent technologies.
                        </p>
                 </div>
             </div>
-            <div class="right wow fadeInRight delay-12s">
+            <div class="col-lg-2 d-sm-none d-md-inline right wow fadeInRight delay-12s">
                 <hr>
                 <a href="Jacob Webber - Resume.pdf" target="_blank">
                     <div class="linked"><i class="fa fa-file-pdf-o"></i> <span>RESUME</span>
@@ -150,30 +149,51 @@ Last updated: November 2016
                 <hr>
             </div>
         </div>
+        </div>
     </section>
     <!--about end-->
 
     <!--portfolio section-->
     <section class="main-section charcoal portfolio" id="portfolio">
-        <h1>Projects</h1>
+        <h1>Personal Projects</h1>
         <div class="container portfolio-filter wow fadeIn delay-02s">
             <ul class="portfolio-nav">
-                <li><a href="#" data-filter="*" class="option  current">All</a></li>
+                <li><a href="#" data-filter="*" class="option current">All</a></li>
             </ul>
             <ul class="portfolio-nav">
-
                 <li><a href="#" data-filter=".app" class="option apps ">Apps</a></li>
                 <li><a href="#" data-filter=".web" class="option web ">Web</a></li>
             </ul>
             <ul class="portfolio-nav hidden-xs">
                 <li><a href="#" data-filter=".java" class="option">Java</a></li>
-                <li><a href="#" data-filter=".php" class="option">PHP</a></li>
+                <li><a href="#" data-filter=".javascript" class="option">Javascript</a></li>
                 <li><a href="#" data-filter=".csharp" class="option">C#</a></li>
                 <li><a href="#" data-filter=".vba" class="option">VBA</a></li>
             </ul>
         </div>
 
         <ul class="portfolio-container" id="rig">
+            <li class="javascript app web">
+                <a class="rig-cell" href="http://drink4thekids.com" target="blank_">
+                    <img class="rig-img" src="img/drink4thekids.jpg">
+                    <h2 class="proj-title" id="wp">Christmas<br>Charity Party</h2>
+                    <span class="rig-overlay"></span>
+                    <span class="rig-text"><h2>Christmas Charity Party</h2>
+				<h6>Marketing page and mobile web application for our annual charity party. Order cocktails from our website and track your spot in the queue. All proceeds go to charity.</h6>
+                <div class="project-date">December 2021</div>
+				<div class="skills bottom">
+				<span class="skill language">Javascript</span>
+                <span class="skill language">EJS</span>
+                <span class="skill language">ExpressJS</span>
+                <span class="skill language">PostgreSQL</span>
+                <span class="skill language">Bootstrap 5</span>
+                    <span> | </span>
+                    <span class="skill">Heroku</span>
+                    <span class="skill">NodeJS</span>
+                    </div>
+                    </span>
+                </a>
+            </li>
             <li class="java app web">
                 <a class="rig-cell" href="https://jakewebber.github.io/LoLQuickStats/" target="blank_">
                     <h2 class="proj-title" id="lol">League <br>Quick Stats</h2>
@@ -181,7 +201,8 @@ Last updated: November 2016
                     <span class="rig-overlay"></span>
                     <span class="rig-text"><h2>LoLQuickStats</h2>
 					<h6>The fastest stats for a League of Legends team lobby before loading in.<br> Uses optical character recognition and image comparison algorithms to quickly obtain information on your team's players from a screenshot.</h6>				
-					<div class="skills bottom">
+                    <div class="project-date">November 2017</div>
+                    <div class="skills bottom">
 					<span class="skill language">Java</span>
                     <span class="skill language">CSS</span>
                     <span class="skill language">JSON</span>
@@ -198,7 +219,8 @@ Last updated: November 2016
                     <span class="rig-overlay"></span>
                     <span class="rig-text"><h2>HighWire 3D</h2>
 				<h6>Model 3D wireframe scenes with different projections, edit objects with dynamic controls and custom matrix transformations, and import / export as a simple CSV.</h6>
-				<div class="skills bottom">
+                <div class="project-date">January 2016</div>
+                <div class="skills bottom">
 				<span class="skill language">Java</span>
                     <span> | </span>
                     <span class="skill">Pixel Manipulation</span>
@@ -214,28 +236,13 @@ Last updated: November 2016
                     <span class="rig-overlay"></span>
                     <span class="rig-text"><h2>HubSpot Contact Update</h2>
 				<h6>Script for cleaning and updating HubSpot contacts using their RESTful API. Outputs an HTMl page table of the contact updates. Includes robust response error code handling. Set up as a CHRON job for regular updating</h6>
-				<div class="skills bottom">
+                <div class="project-date">2016</div>
+                <div class="skills bottom">
 				<span class="skill language">PHP</span>
                     <span class="skill language">HTML</span>
                     <span> | </span>
                     <span class="skill">HubSpot</span>
                     <span class="skill">REST API</span>
-                    </div>
-                    </span>
-                </a>
-            </li>
-            <li class="php web">
-                <a class="rig-cell" href="https://github.com/jakewebber/WPCategoryImport" target="blank_">
-                    <img class="rig-img" src="img/wpcategory-tile.png">
-                    <h2 class="proj-title" id="wp">Taxonomy<br>Import</h2>
-                    <span class="rig-overlay"></span>
-                    <span class="rig-text"><h2>WordPress Taxonomy Import</h2>
-				<h6>Simple WordPress plugin for importing a CSV file as a taxonomy / nested categories into WordPress.</h6>
-				<div class="skills bottom">
-				<span class="skill language">PHP</span>
-                    <span> | </span>
-                    <span class="skill">WordPress</span>
-                    <span class="skill">Linux Systems</span>
                     </div>
                     </span>
                 </a>
@@ -247,7 +254,8 @@ Last updated: November 2016
                     <span class="rig-overlay"></span>
                     <span class="rig-text"><h2>Word Doc Splitter Macro</h2>
 				<h6>Word macro for batch-splitting hundreds of Word Doc into HTML files by delimiters. Auto-formats for a specific report template and performs robust format-error catching to ensure a complete split. </h6>
-				<div class="skills bottom">
+                <div class="project-date">August 2016</div>
+                <div class="skills bottom">
 					<span class="skill language">VBA</span>
                     <span> | </span>
                     <span class="skill">Visual Studio</span>
@@ -262,7 +270,8 @@ Last updated: November 2016
                     <span class="rig-overlay"></span>
                     <span class="rig-text"><h2>Memory Pool</h2>
 					<h6>3D memory-based game matching pool balls. Balls mimic pool table physics and collisions when clicked. Only two balls are visible at a time after displaying all for a brief second at the start.</h6>
-					<div class="skills bottom">
+                    <div class="project-date">November 2016</div>
+                    <div class="skills bottom">
 					<span class="skill language">C#</span>
                     <span class="skill language">ASP</span>
                     <span> | </span>
@@ -279,6 +288,7 @@ Last updated: November 2016
                     <span class="rig-text">
 				<h2>Reddit Wallpaper Virtual Reality</h2>
 				<h6>Pulls the top most recent posts from the wallpapers subreddit and displays them in a virtual reality gallery.</h6>
+                <div class="project-date">November 2016</div>
 				<div class="skills bottom">
 					<span class="skill language">C#</span>
                     <span class="skill language">ASP</span>
@@ -297,7 +307,8 @@ Last updated: November 2016
                     <span class="rig-text">
 				<h2>Word Solver</h2>
 				<h6>Solve for words of a specified length using dictionary algorithms based on letter frequencies. Optimized for solving word-based games, or simply searching words.</h6>
-				<div class="skills bottom">
+                <div class="project-date">January 2015</div>
+                <div class="skills bottom">
 					<span class="skill language">Java</span>
                     <span> | </span>
                     <span class="skill">Data Visualization</span>
@@ -313,9 +324,11 @@ Last updated: November 2016
                     <span class="rig-text">
 				<h2>Game Arcade</h2>
 				<h6>Renditions of classic arcade games like tetris with added features. More points are earned for higher difficulty.</h6>	
+                <div class="project-date">September 2015</div>
 				<div class="skills bottom">
 					<span class="skill language">Java</span>
                     <span> | </span>
+                    <span class="skill">Java Swing</span>
                     <span class="skill">Data Structures</span>
                     </div>
                     </span>
@@ -329,7 +342,8 @@ Last updated: November 2016
                     <span class="rig-text">
 				<h2>Personal Website</h2>
 				<h6>A responsive and mobile-friendly personal site with a lot of custom CSS on top of some popular libraries. Built with Bootstrap, hosted with GitHub Pages. Source code found here.
-				</h6>	
+				</h6>
+                <div class="project-date">January 2016</div>
 				<div class="skills bottom">
 					<span class="skill language">HTML</span>
                     <span class="skill language">CSS</span>
@@ -355,13 +369,50 @@ Last updated: November 2016
             <h1>Experience</h1>
             <hr>
             <div class="row">
-                <div class="col-lg-8 col-sm-8 wow fadeInLeft delay-05s">
+                <div class="col-lg-10 col-sm-10 wow fadeInLeft delay-05s">
                     <div class="experience-list">
                         <h2>Employment</h2>
                         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
                         <!--Timeline -->
                         <ul class="timeline">
+                            <div class="evestment swe">
+                                <li>
+                                    <div class="direction-r">
+                                        <span class="flag-wrapper">
+                                            <a href="https://www.evestment.com/"><img class="circle" src="img/evestment.png"></a>
+                                            <span class="info-wrapper">
+                                            <span class="info date">April 2020 — Present</span>
+                                        <span class="flag">eVestment</span>
+                                        <span class="info title">Software Engineer - Full Stack</span>
+                                        </span>
+                                        <ul class="bullets">
+                                            <li>Building financial intelligence web applications in a microservice architecture.</li>
+                                            <li>Proactively collaborating with management and team members to translate complex requirements into solutions.</li>
+                                            <li>Overseeing completion of a variety of epics in an agile work environment with a high-performance team.</li>
+                                            <li>Constructed an ETL pipeline utilizing Terraform for code infrastructure. </li>									
+                                            <li class="no-bullet">
+                                                <div class="skills">
+                                                    <span class="skill language">C#</span>
+                                                    <span class="skill language">VueJS</span>
+                                                    <span class="skill language">ExtJS</span>
+                                                    <span class="skill language">Javascript</span>
+                                                    <span class="skill language">SQL</span>
+                                                    <span>|</span>
+                                                    <span class="skill">Visual Studio</span>
+                                                    <span class="skill">SQL Server / PostgreSQL</span>
+                                                    <span class="skill">AWS Solutions</span>
+                                                    <span class="skill">Terraform</span>
+                                                    <span class="skill">Git / Stash</span>
+                                                    <span class="skill">Jira</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <br>
+                                <br>
+                            </div>
 						<!-- Item 0 -->
 							<div class="swe">
                             <li>
@@ -369,14 +420,14 @@ Last updated: November 2016
                                     <span class="flag-wrapper">
 										<a href="http://www.apogee.net"><img class="circle" src="img/apogee.png"></a>
 										<span class="info-wrapper">
-										<span class="info date">May 2017 — Present</span>
+										<span class="info date">May 2017 — April 2020</span>
                                     <span class="flag">Apogee Interactive</span>
-                                    <span class="info title">Software Engineer</span>
+                                    <span class="info title">Software Engineer - Full Stack</span>
                                     </span>
                                     <ul class="bullets">
 										<li>Designing and developing applications related to the energy industry in a .NET MVC environment.</li>
 										<li>Researched and implemented a rules engine solution for a dynamic email automation system.</li>
-                                        <li>Developing internal tools for managing client subscriptions and creating dynamic conditional rules for a rules engine.</li>									
+                                        <li>Developing internal tools for managing client subscriptions and creating code-driven outcomes for a rules engine.</li>									
                                         <li>Refactoring legacy code for performance improvements and cleaner code base.</li>
                                         <li class="no-bullet">
                                             <div class="skills">
@@ -409,8 +460,8 @@ Last updated: November 2016
                                     <span class="info title">Web Developer Intern</span>
                                     </span>
                                     <ul class="bullets">
-                                        <li>Created websites from design specifications within both WordPress and HubSpot editors, as well as custom HTML / CSS.</li>
-                                        <li>Automated months of manual work in Microsoft Office with VBA macros that generated over 50,000 categorized HTML Wordpress posts from a decade of weekly reports.</li>
+                                        <li>Created websites from design specifications within WordPress and custom HTML / CSS.</li>
+                                        <li>Automated months of manual data entry work with a combination of VBA macros and other scripts to transform documents into Wordpress pages.</li>
                                         <li>Improved and designed new scripts for efficiently updating and reorganizing databases.</li>
                                         <li>Created custom plug-ins and applications for clients with fast deadlines by utilizing APIs from HubSpot, DropBox, Google Drive, and WordPress.</li>
                                         <li class="no-bullet">
@@ -447,8 +498,7 @@ Last updated: November 2016
                                         </span>
                                         <ul class="bullets">
                                             <li>Edited status reports for clients, health risk assessments for presentations, and handouts of compiled statistics from health databases on a provisional basis.</li>
-                                            <li>Designed Microsoft Office templates for more efficient future company publishes.</li>
-                                            <li>Instructed peers and employers on design techniques via Skype sessions and performed live revisions on projects to fit their specifications.</li>
+                                            <li>Designed Microsoft Office templates for more efficient report publishing.</li>
                                             <li class="no-bullet">
                                                 <div class="skills">
                                                     <span class="tools">
@@ -500,7 +550,7 @@ Last updated: November 2016
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-sm-4  text-right wow fadeInUp delay-02s">
+                <div class="col-lg-2 col-md-12  text-right wow fadeInUp delay-02s">
                     <div class="college">
                         <h2>Education</h2>
                         <span class="icon-header">University of Georgia</span><img class="icon" src="img/uga.png">
@@ -560,7 +610,7 @@ Last updated: November 2016
 
             <h1 align="center" id="skillset">Skills</h1>
             <div class="skillset">
-                <div class="container wrapper wow fadeInUp delay-02s" id="graph">
+                <div class="skillset-inner container wrapper wow fadeInUp delay-02s" id="graph">
                     <br>
                     <table id="q-graph">
                         <tbody>
@@ -576,17 +626,17 @@ Last updated: November 2016
                                     </div>
                                 </th>
                                 <td class="bar fluent" id="one">
-                                    <p>HTML/CSS</p>
+                                    <p>Vue</p>
                                 </td>
                                 <td class="bar fluent" id="two">
-                                    <p>Javascript/TS</p>
+                                    <p>JS</p>
                                     <img src="img/vertline.png">
                                 </td>
-                                <td class="bar familiar" id="three">
-                                    <p>React</p>
+                                <td class="bar fluent" id="three">
+                                    <p>Bootstrap</p>
                                 </td>
                                 <td class="bar competent" id="four">
-                                    <p align="center" valign="middle">KnockoutJS</p>
+                                    <p valign="middle">Knockout</p>
                                     <img src="img/vertline.png">
                                 </td>
                                 </td>
@@ -610,10 +660,10 @@ Last updated: November 2016
                                     <img src="img/vertline.png">
                                 </td>
                                 <td class="bar familiar" id="three">
-                                    <p>Python</p>
+                                    <p>JS</p>
                                 </td>
                                 <td class="bar basic" id="four">
-                                    <p align="center" valign="middle">C++</p>
+                                    <p align="center" valign="middle">Python</p>
                                     <img src="img/vertline.png">
                                 </td>
                                 </td>
@@ -629,7 +679,7 @@ Last updated: November 2016
                                         <div class="top">Database / Services / Other</div>
                                     </div>
                                 </th>
-                                <td class="bar competent" id="one">
+                                <td class="bar fluent" id="one">
                                     <p>SQL</p>
                                 </td>
                                 <td class="bar competent" id="two">
@@ -639,8 +689,8 @@ Last updated: November 2016
                                 <td class="bar competent" id="three">
                                     <p>AWS</p>
                                 </td>
-                                <td class="bar familiar" id="four">
-                                    <p align="center" valign="middle">VBA</p>
+                                <td class="bar basic" id="four">
+                                    <p align="center" valign="middle">Terraform</p>
                                     <img src="img/vertline.png">
                                 </td>
                                 </td>
@@ -679,7 +729,7 @@ Last updated: November 2016
         </div>
     </section>
     <!--experience section-end-->
-    <div id="google-container"id="contact"></div>
+    <div id="contact"></div>
     <div class="fade-bg">
         <div class="container">
             <section class="main-section contact" id="contact">
@@ -696,7 +746,7 @@ Last updated: November 2016
                             </div>
                             <div class="contact-info-box phone clearfix">
                                 <h3><i class="fa-phone"></i>Phone:</h3>
-                                <a href="tel:678-736-1277"><span>678-736-****</span>
+                                <a href="tel:678-736-1277"><span>678-736-1277</span>
 					</div>
 					<div class="contact-info-box email clearfix">
 						<h3><i class="fa-pencil"></i>Email:</h3>
@@ -895,108 +945,120 @@ Last updated: November 2016
         });
     </script>
 
-    <script type="text/javascript">
-        $(window).load(function() {
+<script type="text/javascript">
+    $(window).load(function() {
 
-            var $container = $('.portfolio-container'),
-                $body = $('body'),
-                columns = null;
+        var $container = $('.portfolio-container'),
+            $body = $('body'),
+            columns = null;
 
-            // Click Portfolio Filter
-            $('.portfolio-filter a').click(function() {
-                $('.portfolio-filter .current').removeClass('current');
-                $(this).addClass('current');
-
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-                    filter: selector,
-                });
-                return false;
+            $container.isotope({
+                filter: '*'
             });
 
-            // Click Apps Nav
-            $('.apps-nav').bind('click', function(event) {
-                console.log("nav clicked");
-                $('.portfolio-filter .current').removeClass('current');
-                $('.apps').addClass('current');
-                var selector = $('.apps').attr('data-filter');
-                $container.isotope({
-                    filter: selector,
-                });
-                return false;
-            });
+        // Click Portfolio Filter
+        $('.portfolio-filter a').click(function() {
+            $('.portfolio-filter .current').removeClass('current');
+            $(this).addClass('current');
 
-            // Click Web Dev Nav
-            $('.web-nav').bind('click', function(event) {
-                console.log("nav clicked");
-                $('.portfolio-filter .current').removeClass('current');
-                $('.web').addClass('current');
-                var selector = $('.web').attr('data-filter');
-                $container.isotope({
-                    filter: selector,
-                });
-                return false;
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
             });
-			// Click SWE Nav
-            $('.swe-nav').bind('click', function(event) {
-                $('.swe').addClass('pulse-animate');
-                setTimeout(function() {
-                    $('.swe').removeClass('pulse-animate');
-                }, 5000);
-            });
-
-
-            // Click Marketing Nav
-            $('.marketing-nav').bind('click', function(event) {
-                $('.marketing').addClass('pulse-animate');
-                setTimeout(function() {
-                    $('.marketing').removeClass('pulse-animate');
-                }, 5000);
-            });
-            // Click Skillset Nav
-            $('.skillset-nav').bind('click', function(event) {
-                $('.skillset').addClass('pulse-animate');
-                setTimeout(function() {
-                    $('.skillset').removeClass('pulse-animate');
-                }, 5000);
-            });
-            // Click College Nav
-            $('.college-nav').bind('click', function(event) {
-                $('.college').addClass('pulse-animate');
-                setTimeout(function() {
-                    $('.college').removeClass('pulse-animate');
-                }, 5000);
-            });
-
-            // Click teaching Nav
-            $('.teaching-nav').bind('click', function(event) {
-                $('.teacher').addClass('pulse-animate');
-                setTimeout(function() {
-                    $('.teacher').removeClass('pulse-animate');
-                }, 5000);
-            });
-            // Click Graphic DesignNav
-            $('.graphic-design-nav').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top - 90
-                }, 1000, 'easeInOutExpo');
-                event.preventDefault();
-                $('.graphic-design').addClass('pulse-animate');
-                setTimeout(function() {
-                    $('.graphic-design').removeClass('pulse-animate');
-                }, 5000);
-            });
-
-            // Click main nav
-            $('.navFilter a').click(function() {
-                $('.navFilter .current').removeClass('current');
-                $(this).addClass('current');
-                return false;
-            });
-
+            return false;
         });
-    </script>
+
+        // Click Apps Nav
+        $('.apps-nav').bind('click', function(event) {
+            console.log("nav clicked");
+            $('.portfolio-filter .current').removeClass('current');
+            $('.apps').addClass('current');
+            var selector = $('.apps').attr('data-filter');
+            $container.isotope({
+                filter: selector,
+            });
+            return false;
+        });
+
+        // Click Web Dev Nav
+        $('.web-nav').bind('click', function(event) {
+            console.log("nav clicked");
+            $('.portfolio-filter .current').removeClass('current');
+            $('.web').addClass('current');
+            var selector = $('.web').attr('data-filter');
+            $container.isotope({
+                filter: selector,
+            });
+            return false;
+        });
+
+        // Click evestment Nav
+        $('.evestment-nav').bind('click', function(event) {
+            $('.evestment').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.evestment').removeClass('pulse-animate');
+            }, 5000);
+        });
+        
+        // Click SWE Nav
+        $('.swe-nav').bind('click', function(event) {
+            $('.swe').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.swe').removeClass('pulse-animate');
+            }, 5000);
+        });
+
+        // Click Marketing Nav
+        $('.marketing-nav').bind('click', function(event) {
+            $('.marketing').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.marketing').removeClass('pulse-animate');
+            }, 5000);
+        });
+        // Click Skillset Nav
+        $('.skillset-nav').bind('click', function(event) {
+            $('.skillset').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.skillset').removeClass('pulse-animate');
+            }, 5000);
+        });
+        // Click College Nav
+        $('.college-nav').bind('click', function(event) {
+            $('.college').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.college').removeClass('pulse-animate');
+            }, 5000);
+        });
+
+        // Click teaching Nav
+        $('.teaching-nav').bind('click', function(event) {
+            $('.teacher').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.teacher').removeClass('pulse-animate');
+            }, 5000);
+        });
+        // Click Graphic DesignNav
+        $('.graphic-design-nav').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 90
+            }, 1000, 'easeInOutExpo');
+            event.preventDefault();
+            $('.graphic-design').addClass('pulse-animate');
+            setTimeout(function() {
+                $('.graphic-design').removeClass('pulse-animate');
+            }, 5000);
+        });
+
+        // Click main nav
+        $('.navFilter a').click(function() {
+            $('.navFilter .current').removeClass('current');
+            $(this).addClass('current');
+            return false;
+        });
+
+    });
+</script>
 
 </body>
 
