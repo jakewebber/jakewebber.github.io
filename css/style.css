@@ -350,9 +350,15 @@ h1 {
     border-right: 1px solid #333;
 }
 .main-nav li a.current {
-    background: #BF1531 !important;
-    color: #fff;
+    background: #eee !important;
+    color: #222;
     text-decoration: none;
+}
+.main-nav li a.current:hover {
+    color: #222;
+}
+.main-nav li a.current .nav-img{
+    filter: brightness(0.025);
 }
 .main-nav li a:hover {
     text-decoration: none;
@@ -360,7 +366,7 @@ h1 {
     background: #222;
 }
 .main-nav li a:hover .nav-img{
-		transform: translateY(15px);
+	transform: translateY(15px);
 	opacity: 0;
 }
 
@@ -548,7 +554,6 @@ h1 {
     max-height: 0;
     font-size: 0;
     transition: .25s ease;
-    list-style-type: none;
     margin: 0px 0px;
 }
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
@@ -698,6 +703,7 @@ h1 {
     list-style: none;
     font-size: 0;
 }
+
 .portfolio-nav ul {
     padding: 0 0;
     width: 100%;
@@ -743,7 +749,12 @@ h1 {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-
+@media only screen and (max-width: 600px) {
+    .portfolio-nav li a{
+        font-size: 18px;
+      padding: 4px 10px;
+    }
+  }
 .border-left {
     border-left: 1px solid #555;
 }
@@ -764,9 +775,9 @@ h1 {
 
 
 .portfolio-nav li a.current {
-    background: #BF1531;
-	border-color: #BF1531 !important;
-    color: #fff;
+    background: #eee;
+	border-color: #eee !important;
+    color: #333;
     text-decoration: none;
 }
 .portfolio-container {
@@ -845,12 +856,12 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     white-space: nowrap;
-    background: #aaa;
-    color: black;
+    color: rgb(95, 94, 94);
     padding: 3px 10px;
     border-radius: 1em;
+    border: 1px solid #9c9c9c;
     background: #ccc;
-    transition: all 0.3s ease-in-out;
+    transition: rgb(102, 110, 101)0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 
@@ -858,8 +869,9 @@ h1 {
 .skills .language {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: white;
-    background: #777;
+    color: rgb(94, 92, 92);
+    border: 1px solid #90a8c7;
+    background: rgb(177 188 211);
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -896,6 +908,9 @@ h1 {
     background-size: cover;
     padding: 20px 0 10px;
     text-align: center;
+}
+.github-section a{
+    width: 100%;
 }
 .hideContent {
     height: 650px !important;
@@ -1031,7 +1046,7 @@ h1 {
 .input-btn {
     width: 200px;
     height: 50px;
-    background: #BF1531;
+    background: #45467a;
     border-radius: 2px;
     color: #ffffff;
     font-size: 14px;

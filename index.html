@@ -165,7 +165,7 @@ This is long overdue for a rewrite
                 <li><a href="#" data-filter=".app" class="option apps ">Apps</a></li>
                 <li><a href="#" data-filter=".web" class="option web ">Web</a></li>
             </ul>
-            <ul class="portfolio-nav hidden-xs">
+            <ul class="portfolio-nav d-none d-md-block">
                 <li><a href="#" data-filter=".java" class="option">Java</a></li>
                 <li><a href="#" data-filter=".javascript" class="option">Javascript</a></li>
                 <li><a href="#" data-filter=".csharp" class="option">C#</a></li>
@@ -176,11 +176,31 @@ This is long overdue for a rewrite
         <ul class="portfolio-container" id="rig">
             <li class="javascript app web">
                 <a class="rig-cell" href="http://drink4thekids.com" target="blank_">
+                    <img class="rig-img" src="img/boheme-tile.jpg">
+                    <h2 class="proj-title" id="bh">Boheme</h2>
+                    <span class="rig-overlay"></span>
+                    <span class="rig-text"><h2>Boheme</h2>
+				<h6>Bringing evolved content creator earnings with a link management system, payment processing, and analytics insights.</h6>
+                <div class="project-date">Febuary 2023</div>
+				<div class="skills bottom">
+				<span class="skill language">Typescript</span>
+                <span class="skill language">React</span>
+                <span class="skill language">Next.js</span>
+                <span class="skill language">PostgreSQL</span>
+                <span class="skill language">Tailwind</span>
+                    <span> | </span>
+                    <span class="skill">Supabase</span>
+                    </div>
+                    </span>
+                </a>
+            </li>
+            <li class="javascript app web">
+                <a class="rig-cell" href="http://drink4thekids.com" target="blank_">
                     <img class="rig-img" src="img/drink4thekids.jpg">
                     <h2 class="proj-title" id="wp">Christmas<br>Charity Party</h2>
                     <span class="rig-overlay"></span>
                     <span class="rig-text"><h2>Christmas Charity Party</h2>
-				<h6>Marketing page and mobile web application for our annual charity party. Order cocktails from our website and track your spot in the queue. All proceeds go to charity.</h6>
+				<h6>Landing page and mobile web app for our annual charity party. Order cocktails and track your spot in the queue. All proceeds go to charity.</h6>
                 <div class="project-date">December 2021</div>
 				<div class="skills bottom">
 				<span class="skill language">Javascript</span>
@@ -230,7 +250,7 @@ This is long overdue for a rewrite
                     </span>
                 </a>
             </li>
-            <li class="php web">
+            <!-- <li class="php web">
                 <a class="rig-cell" href="https://github.com/jakewebber/HubSpotContactUpdate#readme" target="blank_">
                     <img class="rig-img" src="img/hubspotcontact-tile.jpg">
                     <h2 class="proj-title" id="hs">Contact Update</h2>
@@ -247,7 +267,7 @@ This is long overdue for a rewrite
                     </div>
                     </span>
                 </a>
-            </li>
+            </li> -->
             <li class="vba">
                 <a class="rig-cell" href="https://github.com/jakewebber/VBADocSplitter#readme" target="blank_">
                     <img class="rig-img" src="img/docsplitter-tile.png">
@@ -339,13 +359,14 @@ This is long overdue for a rewrite
                     <span class="rig-overlay"></span>
                     <span class="rig-text">
 				<h2>Personal Website</h2>
-				<h6>A responsive and mobile-friendly personal site with a lot of custom CSS on top of some popular libraries. Built with Bootstrap, hosted with GitHub Pages. Source code found here.
+				<h6>Responsive personal site with custom CSS on top of some popular libraries. Written in vanilla JS as a reminder of why frontend frameworks are great. Source code found here.
 				</h6>
                 <div class="project-date">January 2016</div>
 				<div class="skills bottom">
 					<span class="skill language">HTML</span>
                     <span class="skill language">CSS</span>
                     <span class="skill language">Javascript</span>
+                    <span class="skill language">JQuery</span>
                     <span> | </span>
                     <span class="skill">Bootstrap</span>
                     </div>
@@ -386,8 +407,8 @@ This is long overdue for a rewrite
                                         </span>
                                         <ul class="bullets">
                                             <li>Building financial intelligence web applications in a microservice architecture.</li>
-                                            <li>Proactively collaborating with management and team members to translate complex requirements into solutions.</li>
-                                            <li>Overseeing completion of a variety of epics in an agile work environment with a high-performance team.</li>
+                                            <li>Lead several projects, collaborating with management and team members to translate complex requirements into solutions.</li>
+                                            <li>Overseeing completion of a variety of epics in an agile-work environment with a high-performance team.</li>
                                             <li>Constructed an ETL pipeline utilizing various AWS products like Athena, Glue jobs, SQS, and Terraform for infrastructure as code.</li>									
                                             <li class="no-bullet">
                                                 <div class="skills">
@@ -408,8 +429,7 @@ This is long overdue for a rewrite
                                         </ul>
                                     </div>
                                 </li>
-                                <br>
-                                <br>
+                          
                             </div>
 						<!-- Item 0 -->
 							<div class="swe">
@@ -443,8 +463,7 @@ This is long overdue for a rewrite
                                     </ul>
                                 </div>
                             </li>
-							<br>
-							<br>
+					
 							</div>
                             <!-- Item 1 -->
 							<div class="marketing">
@@ -476,40 +495,16 @@ This is long overdue for a rewrite
                                             </div>
                                         </li>
                                     </ul>
+                                    </span>
                                 </div>
                             </li>
-							<br>
-							<br>
 							</div>
 
                             <!-- Item 2 -->
-                            <div class="graphic-design" id="graphic-design">
-                                <li>
-                                    <div class="direction-r">
-                                        <span class="flag-wrapper">
-										<a href="http://www.strategichealthservices.com/"><img class="circle" src="img/sh.png">
-										</a>
-									<span class="info date">Summer 2015</span>
-                                        <span class="flag">Strategic Health Services</span>
-                                        <span class="info title">Report & Graphic Designer</span>
-                                        </span>
-                                        <ul class="bullets">
-                                            <li>Edited status reports for clients, health risk assessments for presentations, and handouts of compiled statistics from health databases on a provisional basis.</li>
-                                            <li>Designed Microsoft Office templates for more efficient report publishing.</li>
-                                            <li class="no-bullet">
-                                                <div class="skills">
-                                                    <span class="tools">
-												<span class="skill">Microsoft Office</span>
-                                                    <span class="skill">GIMP</span>
-                                                    <span class="skill">Photoshop</span>
-										</div>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<br>
-							<br>
+                    
+				
 							<!-- Item 3 -->
+                            <div>
 							<li>
 								<div class="direction-r">
 									<div class="flag-wrapper" onclick>
@@ -517,7 +512,6 @@ This is long overdue for a rewrite
 										<span class="info date">Aug 2012 — 2015</span>
                                                     <span class="flag">Self-Employed</span>
                                                     <span class="info title">Video & Graphic Designer</span>
-                                                </div>
                                                 <ul class="bullets">
                                                     <li>Created promotional videos with a post-production team for local music venues and theatres.</li>
                                                     <li>Designed album artworks and promotional graphics for local artists.</li>
@@ -538,6 +532,8 @@ This is long overdue for a rewrite
                                                         </div>
                                                     </li>
                                                 </ul>
+                                            </div>
+
                                     </div>
                                     </li>
 								<br>
@@ -632,7 +628,7 @@ This is long overdue for a rewrite
                                     <p>Bootstrap</p>
                                 </td>
                                 <td class="bar competent" id="four">
-                                    <p valign="middle">Knockout</p>
+                                    <p valign="middle">React</p>
                                     <img src="img/vertline.png">
                                 </td>
                                 </td>
@@ -925,7 +921,7 @@ This is long overdue for a rewrite
 
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top - 50
-                }, 1000, 'easeInOutExpo');
+                }, 100, 'easeInOutExpo');
                 event.preventDefault();
             });
             // Other anchor links
@@ -936,7 +932,7 @@ This is long overdue for a rewrite
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 50
-            }, 1000, 'easeInOutExpo');
+            }, 100, 'easeInOutExpo');
             event.preventDefault();
         });
     </script>

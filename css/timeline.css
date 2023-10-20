@@ -5,6 +5,7 @@
     .timeline {
         width: 100%;
         padding: 4em 0 1em 0;
+        transition: all 100ms ease-in 200ms;
     }
     .timeline li {
         padding: 1em 0;
@@ -77,6 +78,7 @@ hr {
     margin-top: 2px;
     padding: 1em 0;
     list-style-type: none;
+    transition: all 100ms ease-in 200ms;
 }
 .circle {
     width: 60px;
@@ -92,9 +94,7 @@ hr {
     transform: scale(.7);
     z-index: 100;
 }
-.flag-wrapper:hover .circle {
-    transform: scale(1);
-}
+
 .timeline:before {
     position: absolute;
     top: 0;
@@ -130,7 +130,7 @@ hr {
     border-radius: 2px;
     height: 6px;
     position: absolute;
-    background-color: #BF1531;
+    background-color: #8f8e8e;
     z-index: 6;
 }
 .flag-wrapper {
@@ -140,14 +140,41 @@ hr {
     text-align: left;
     width: 100%;
     margin: 0px 0px;
+    padding: 15px;
+    padding-bottom: 25px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 10px;
+    transition: all 100ms ease-in 200ms;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .flag-wrapper {
+      left: 0px;
+    }
+  }
+.flag-wrapper:hover .circle {
+    transform: scale(.8);
+}
+
+.timeline:hover .flag-wrapper {
+    opacity: .5;
+}
+
+.flag-wrapper:hover {
+    border: 1px solid #d5d0d0;
+    background: rgba(0, 0, 0, 0.10);
+    opacity: 1 !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 .flag-wrapper a {
     text-decoration: none;
 }
 .flag {
     position: relative;
     display: inline-block;
-    background: #BF1531;
+    background: #446477;
     padding: 6px 18px;
     font-weight: 500;
     font-size: 14px;
@@ -159,7 +186,7 @@ hr {
 }
 .direction-r .flag {
     border-bottom: solid 1px #aaa;
-    border-top: solid 1px #aaa;
+    border-top: solid 1px #945d5d;
 }
 .direction-r .flag:before {
     left: -21px;
@@ -174,7 +201,7 @@ hr {
     width: 0;
     margin-top: -8px;
     border: solid transparent;
-    border-right-color: #BF1531;
+    border-right-color: #446477;
     border-width: 8px;
     pointer-events: none;
 }
@@ -184,13 +211,13 @@ hr {
     position: relative;
     width: auto;
     white-space: nowrap;
-    color: white;
+    color: #333;
     padding: 6px 18px;
     border-radius: 2px;
     font-size: 14px;
-    background: #333;
-    border-bottom: solid 1px #aaa;
-    border-top: solid 1px #aaa;
+    background: #ccc;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
 }
 .info:before {
     left: -21px;
@@ -205,13 +232,13 @@ hr {
     width: 0;
     margin-top: -8px;
     border: solid transparent;
-    border-right-color: #333;
+    border-right-color: #ccc;
     border-width: 8px;
     pointer-events: none;
 }
 .title {
     right: 5px;
-    border-right: solid 1px #aaa;
+    border-right: solid 1px #ccc;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     text-align:center;
@@ -236,6 +263,7 @@ hr {
     list-style-type: square;
     margin-left: -20px
 }
+
 .bullets li {
     padding-top: 2px;
     padding-bottom: 2px;
